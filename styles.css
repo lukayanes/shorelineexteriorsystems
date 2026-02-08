@@ -1742,3 +1742,17 @@ select,
   }
 }
 
+/* ===============================
+   PROJECTS SECTION TWEAKS
+================================ */
+
+/* extra spacing above Projects section */
+.projects-showcase{
+  margin-top: clamp(80px, 10vw, 140px);
+}
+
+/* force navy title color */
+.projects-showcase .about-title{
+  color: var(--navy, #0b1f33);
+}
+
