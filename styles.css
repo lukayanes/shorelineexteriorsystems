@@ -1891,32 +1891,52 @@ select,
 }
 
 /* ======================================
-   NAV LOGO — TIGHT HUG, CENTERED
+   NAV — TIGHT, CENTERED, COMPACT
 ====================================== */
 
-/* NAV WRAPPER */
+/* NAV BAR */
 .top-nav{
   width: 100%;
+  padding: 0;
 }
 
-/* CENTERING CONTAINER */
+/* INNER CONTAINER */
 .top-nav-inner{
   max-width: 1200px;
-  margin: 0 auto;          /* CRITICAL: re-centers nav */
-  padding: 6px 20px;       /* tight vertical hug + horizontal breathing */
+  margin: 0 auto;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  padding: 4px 16px;     /* 🔥 MUCH SMALLER HEIGHT */
 }
 
-/* LOGO CONTAINER */
+/* LEFT + RIGHT GROUPS */
+.nav-left,
+.nav-right{
+  display: flex;
+  align-items: center;
+  gap: 18px;             /* 🔥 TIGHTER spacing between menu items */
+}
+
+/* NAV LINKS */
+.top-nav a,
+.nav-dropbtn{
+  padding: 0;            /* 🔥 removes extra click padding */
+  margin: 0;
+  line-height: 1;        /* 🔥 kills vertical air */
+  letter-spacing: 0.06em; /* was too large before */
+}
+
+/* LOGO */
 .nav-logo{
   display: flex;
   align-items: center;
-  line-height: 0;
+  line-height: 0;        /* 🔥 CRITICAL */
 }
 
-/* DESKTOP LOGO — SAME SIZE */
+/* LOGO IMAGE — SAME SIZE */
 .nav-logo img{
   height: 200px;
   width: auto;
@@ -1927,10 +1947,22 @@ select,
     drop-shadow(0 0 18px rgba(88,190,190,0.75));
 }
 
-/* MOBILE — BIG LOGO */
+/* SERVICES DROPDOWN BUTTON */
+.nav-dropbtn{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* MOBILE */
 @media (max-width: 900px){
   .top-nav-inner{
-    padding: 4px 16px;
+    padding: 2px 12px;   /* 🔥 EVEN TIGHTER */
+  }
+
+  .nav-left,
+  .nav-right{
+    gap: 14px;
   }
 
   .nav-logo img{
@@ -1938,13 +1970,11 @@ select,
   }
 }
 
-/* FOOTER LOGO */
+/* FOOTER LOGO — ISOLATED */
 .footer-logo{
   height: 130px;
   width: auto;
   display: block;
   margin: 0 auto;
 }
-
-
 
