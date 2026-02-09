@@ -1847,20 +1847,5 @@ select,
   }
 }
 
-/* ===============================
-   FIX GAP BEFORE PROJECTS SECTION
-================================ */
 
-/* Ensure previous section ends clean */
-.about-split{
-  background: #ffffff;
-  padding-bottom: clamp(40px, 6vw, 70px);
-}
-
-/* Projects section spacing + background */
-.projects-showcase{
-  background: #ffffff;
-  margin-top: 0;
-  padding-top: clamp(40px, 6vw, 70px);
-}
 
