@@ -1852,4 +1852,62 @@ select,
   height: 80px; /* default is ~60px */
 }
 
+/* ===============================
+   NAV LOGO — MAKE IT POP
+================================ */
+
+/* Base nav logo size */
+.nav-logo img{
+  height: 72px;              /* was likely ~40–48px */
+  width: auto;
+  filter:
+    drop-shadow(0 2px 6px rgba(0,0,0,0.55))
+    drop-shadow(0 0 12px rgba(88,190,190,0.55));
+  transition: all 0.25s ease;
+}
+
+/* Extra emphasis on scroll / dark nav */
+.top-nav{
+  backdrop-filter: blur(10px);
+}
+
+/* Hover emphasis (desktop) */
+.nav-logo:hover img{
+  transform: scale(1.06);
+  filter:
+    drop-shadow(0 4px 10px rgba(0,0,0,0.75))
+    drop-shadow(0 0 16px rgba(88,190,190,0.75));
+}
+
+/* ===============================
+   MOBILE NAV LOGO
+================================ */
+
+@media (max-width: 900px){
+  .nav-logo img{
+    height: 64px;
+    filter:
+      drop-shadow(0 2px 6px rgba(0,0,0,0.7))
+      drop-shadow(0 0 14px rgba(88,190,190,0.6));
+  }
+}
+
+/* ===============================
+   FOOTER LOGO — MUCH LARGER
+================================ */
+
+.footer-logo{
+  height: 110px;             /* BIG visual anchor */
+  width: auto;
+  margin-bottom: 20px;
+  filter:
+    drop-shadow(0 2px 6px rgba(0,0,0,0.4));
+}
+
+/* Mobile footer */
+@media (max-width: 768px){
+  .footer-logo{
+    height: 90px;
+  }
+}
 
