@@ -1756,3 +1756,94 @@ select,
   color: var(--navy, #0b1f33);
 }
 
+/* ===============================
+   HOW IT WORKS / SYSTEMS
+================================ */
+
+.how-it-works{
+  background: #fff;
+  padding: clamp(80px, 10vw, 140px) 0;
+}
+
+/* intro */
+.how-intro{
+  max-width: 820px;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-top: 20px;
+}
+
+/* steps */
+.how-steps{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(24px, 4vw, 60px);
+  margin-top: 70px;
+}
+
+.how-step{
+  background: #f7f9fb;
+  padding: 36px;
+  border-radius: 10px;
+}
+
+.how-step-num{
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  color: var(--navy, #0b1f33);
+}
+
+.how-step h3{
+  margin: 10px 0 12px;
+  font-size: 20px;
+}
+
+.how-step p{
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* systems */
+.systems{
+  margin-top: 90px;
+  text-align: center;
+}
+
+.systems-title{
+  font-size: 22px;
+  margin-bottom: 32px;
+}
+
+.systems-logos{
+  display: flex;
+  justify-content: center;
+  gap: clamp(40px, 6vw, 80px);
+  flex-wrap: wrap;
+}
+
+/* logo interaction */
+.system-logo img{
+  height: 60px;
+  filter: grayscale(100%) brightness(0.9);
+  transition: all 0.25s ease;
+}
+
+/* hover + click */
+.system-logo:hover img,
+.system-logo:focus img,
+.system-logo:active img{
+  filter: none;
+}
+
+/* MOBILE */
+@media (max-width: 900px){
+  .how-steps{
+    grid-template-columns: 1fr;
+  }
+
+  .system-logo img{
+    height: 48px;
+  }
+}
+
