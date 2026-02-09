@@ -145,7 +145,7 @@ a{
   left: 0;
   right: 0;
   z-index: 9999;
-  padding: 10px 24px;
+  padding: 0px 24px;
   background: rgba(0,0,0,0.35);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
