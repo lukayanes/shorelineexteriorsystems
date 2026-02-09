@@ -1890,61 +1890,61 @@ select,
   }
 }
 
-
 /* ======================================
-   NAV LOGO — TIGHT HUG, NO OVERFLOW
+   NAV LOGO — TIGHT HUG, CENTERED
 ====================================== */
 
-/* NAV — REMOVE EXTRA AIR */
+/* NAV WRAPPER */
 .top-nav{
-  height: auto;
-  padding: 0;
+  width: 100%;
 }
 
+/* CENTERING CONTAINER */
 .top-nav-inner{
-  min-height: 0;
-  padding: 6px 0;     /* TIGHT hug */
+  max-width: 1200px;
+  margin: 0 auto;          /* CRITICAL: re-centers nav */
+  padding: 6px 20px;       /* tight vertical hug + horizontal breathing */
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 /* LOGO CONTAINER */
 .nav-logo{
   display: flex;
   align-items: center;
-  line-height: 0;     /* CRITICAL: kills extra vertical space */
+  line-height: 0;
 }
 
 /* DESKTOP LOGO — SAME SIZE */
 .nav-logo img{
   height: 200px;
   width: auto;
-  max-height: none;
   display: block;
 
-  /* Contrast on dark backgrounds */
   filter:
     drop-shadow(0 4px 10px rgba(0,0,0,0.85))
     drop-shadow(0 0 18px rgba(88,190,190,0.75));
 }
 
-/* MOBILE — MUCH LARGER */
+/* MOBILE — BIG LOGO */
 @media (max-width: 900px){
   .top-nav-inner{
-    padding: 2px 0;   /* even tighter on mobile */
+    padding: 4px 16px;
   }
 
   .nav-logo img{
-    height: 150px;    /* BIG mobile logo */
+    height: 150px;
   }
 }
 
-/* FOOTER LOGO — SEPARATE */
+/* FOOTER LOGO */
 .footer-logo{
   height: 130px;
   width: auto;
   display: block;
   margin: 0 auto;
 }
+
 
 
