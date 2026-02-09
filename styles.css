@@ -1852,62 +1852,77 @@ select,
   height: 80px; /* default is ~60px */
 }
 
+
+
 /* ===============================
-   NAV LOGO — MAKE IT POP
+   HOW IT WORKS ICONS
 ================================ */
 
-/* Base nav logo size */
+.how-icon{
+  width: 54px;
+  height: 54px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(88,190,190,0.12);
+  border-radius: 14px;
+}
+
+.how-icon svg{
+  width: 28px;
+  height: 28px;
+  fill: var(--navy, #0b1f33);
+}
+
+/* tighten spacing */
+.how-step-num{
+  display: block;
+  margin-top: 4px;
+}
+
+/* hover emphasis (desktop only) */
+@media (hover: hover){
+  .how-step:hover .how-icon{
+    background: rgba(88,190,190,0.22);
+    transform: translateY(-2px);
+    transition: all 0.25s ease;
+  }
+}
+
+/* ======================================
+   FORCE NAV LOGO SIZE (OVERRIDE ALL)
+====================================== */
 .nav-logo img{
-  height: 72px;              /* was likely ~40–48px */
-  width: auto;
+  height: 96px !important;
+  max-height: none !important;
+  width: auto !important;
+  display: block;
   filter:
-    drop-shadow(0 2px 6px rgba(0,0,0,0.55))
-    drop-shadow(0 0 12px rgba(88,190,190,0.55));
-  transition: all 0.25s ease;
+    drop-shadow(0 4px 10px rgba(0,0,0,0.8))
+    drop-shadow(0 0 18px rgba(88,190,190,0.75)) !important;
 }
 
-/* Extra emphasis on scroll / dark nav */
-.top-nav{
-  backdrop-filter: blur(10px);
+.top-nav,
+.top-nav-inner{
+  min-height: 120px;
+  align-items: center;
 }
-
-/* Hover emphasis (desktop) */
-.nav-logo:hover img{
-  transform: scale(1.06);
-  filter:
-    drop-shadow(0 4px 10px rgba(0,0,0,0.75))
-    drop-shadow(0 0 16px rgba(88,190,190,0.75));
-}
-
-/* ===============================
-   MOBILE NAV LOGO
-================================ */
 
 @media (max-width: 900px){
   .nav-logo img{
-    height: 64px;
-    filter:
-      drop-shadow(0 2px 6px rgba(0,0,0,0.7))
-      drop-shadow(0 0 14px rgba(88,190,190,0.6));
+    height: 78px !important;
+  }
+
+  .top-nav,
+  .top-nav-inner{
+    min-height: 96px;
   }
 }
-
-/* ===============================
-   FOOTER LOGO — MUCH LARGER
-================================ */
 
 .footer-logo{
-  height: 110px;             /* BIG visual anchor */
-  width: auto;
-  margin-bottom: 20px;
-  filter:
-    drop-shadow(0 2px 6px rgba(0,0,0,0.4));
-}
-
-/* Mobile footer */
-@media (max-width: 768px){
-  .footer-logo{
-    height: 90px;
-  }
+  height: 130px !important;
+  max-height: none !important;
+  width: auto !important;
 }
 
