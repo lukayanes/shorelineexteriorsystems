@@ -1896,7 +1896,7 @@ select,
    FORCE NAV LOGO SIZE (OVERRIDE ALL)
 ====================================== */
 .nav-logo img{
-  height: 96px !important;
+  height: 150px !important;
   max-height: none !important;
   width: auto !important;
   display: block;
@@ -1907,7 +1907,7 @@ select,
 
 .top-nav,
 .top-nav-inner{
-  min-height: 150px;
+  min-height: 120px;
   align-items: center;
 }
 
