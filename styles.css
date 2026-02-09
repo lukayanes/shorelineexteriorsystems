@@ -1907,7 +1907,7 @@ select,
 
 .top-nav,
 .top-nav-inner{
-  min-height: 120px;
+  min-height: 100px;
   align-items: center;
 }
 
