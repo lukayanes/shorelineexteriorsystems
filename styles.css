@@ -1891,40 +1891,60 @@ select,
 }
 
 
-
 /* ======================================
-   FORCE NAV LOGO SIZE (OVERRIDE ALL)
+   NAV LOGO — TIGHT HUG, NO OVERFLOW
 ====================================== */
-.nav-logo img{
-  height: 200px !important;
-  max-height: none !important;
-  width: auto !important;
-  display: block;
-  filter:
-    drop-shadow(0 4px 10px rgba(0,0,0,0.8))
-    drop-shadow(0 0 18px rgba(88,190,190,0.75)) !important;
+
+/* NAV — REMOVE EXTRA AIR */
+.top-nav{
+  height: auto;
+  padding: 0;
 }
 
-.top-nav,
 .top-nav-inner{
-  min-height: 100px;
+  min-height: 0;
+  padding: 6px 0;     /* TIGHT hug */
+  display: flex;
   align-items: center;
 }
 
+/* LOGO CONTAINER */
+.nav-logo{
+  display: flex;
+  align-items: center;
+  line-height: 0;     /* CRITICAL: kills extra vertical space */
+}
+
+/* DESKTOP LOGO — SAME SIZE */
+.nav-logo img{
+  height: 200px;
+  width: auto;
+  max-height: none;
+  display: block;
+
+  /* Contrast on dark backgrounds */
+  filter:
+    drop-shadow(0 4px 10px rgba(0,0,0,0.85))
+    drop-shadow(0 0 18px rgba(88,190,190,0.75));
+}
+
+/* MOBILE — MUCH LARGER */
 @media (max-width: 900px){
-  .nav-logo img{
-    height: 78px !important;
-  }
-
-  .top-nav,
   .top-nav-inner{
-    min-height: 96px;
+    padding: 2px 0;   /* even tighter on mobile */
+  }
+
+  .nav-logo img{
+    height: 150px;    /* BIG mobile logo */
   }
 }
 
+/* FOOTER LOGO — SEPARATE */
 .footer-logo{
-  height: 130px !important;
-  max-height: none !important;
-  width: auto !important;
+  height: 130px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
 }
+
 
