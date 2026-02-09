@@ -1847,5 +1847,9 @@ select,
   }
 }
 
+/* Emphasize Sika logo */
+.system-logo img[src*="sika"]{
+  height: 80px; /* default is ~60px */
+}
 
 
