@@ -1852,43 +1852,45 @@ select,
   height: 80px; /* default is ~60px */
 }
 
-
-
 /* ===============================
-   HOW IT WORKS ICONS
+   HOW IT WORKS ICONS (REFINED)
 ================================ */
 
+/* icon container — smaller & cleaner */
 .how-icon{
-  width: 54px;
-  height: 54px;
-  margin-bottom: 14px;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(88,190,190,0.12);
-  border-radius: 14px;
+  background: rgba(216,188,138,0.14); /* soft gold wash */
+  border-radius: 10px;
 }
 
+/* svg icon — gold */
 .how-icon svg{
-  width: 28px;
-  height: 28px;
-  fill: var(--navy, #0b1f33);
+  width: 18px;
+  height: 18px;
+  fill: #d8bc8a; /* shoreline gold */
 }
 
-/* tighten spacing */
+/* step number spacing */
 .how-step-num{
   display: block;
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
-/* hover emphasis (desktop only) */
+/* subtle hover (desktop only) */
 @media (hover: hover){
   .how-step:hover .how-icon{
-    background: rgba(88,190,190,0.22);
-    transform: translateY(-2px);
+    background: rgba(216,188,138,0.22);
+    transform: translateY(-1px);
     transition: all 0.25s ease;
   }
 }
+
+
 
 /* ======================================
    FORCE NAV LOGO SIZE (OVERRIDE ALL)
