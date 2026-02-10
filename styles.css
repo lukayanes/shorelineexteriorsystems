@@ -998,7 +998,7 @@ html.is-loaded .hero-sub{
 
 .footer-logo{
   width: auto;
-  height: 120;
+  height: 120px;
   flex: 0 0 86px;
   display: block;
   object-fit: contain;
