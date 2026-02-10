@@ -1749,3 +1749,11 @@ select,
     line-height: 1;
   }
 }
+
+@media (max-width: 768px){
+  .nav-logo img{
+    filter:
+      drop-shadow(0 2px 6px rgba(0,0,0,0.9))
+      drop-shadow(0 0 20px rgba(95,175,176,0.85));
+  }
+}
