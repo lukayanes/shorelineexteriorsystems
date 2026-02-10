@@ -1777,3 +1777,9 @@ select,
   }
 }
 
+/* SERVICES DROPDOWN — SMALLER ITEM TEXT ONLY */
+.nav-dropmenu a{
+  font-size: 16px;        /* smaller than nav text */
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+}
