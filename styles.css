@@ -1779,7 +1779,15 @@ select,
 
 /* SERVICES DROPDOWN — SMALLER ITEM TEXT ONLY */
 .nav-dropmenu a{
-  font-size: 16px;        /* smaller than nav text */
+  font-size: 15px;        /* smaller than nav text */
   line-height: 1.25;
   letter-spacing: 0.04em;
+}
+
+/* FOOTER — WIDEN BRAND COLUMN, PUSH OTHERS RIGHT */
+@media (min-width: 900px){
+  .footer-grid{
+    grid-template-columns: 1.8fr 1fr 1fr 1fr;
+    column-gap: 56px;
+  }
 }
