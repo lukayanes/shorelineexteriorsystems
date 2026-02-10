@@ -1,17 +1,22 @@
+/* ===============================
+   FOOTER YEAR
+================================ */
+const yearEl = document.getElementById("year");
+if (yearEl) {
+  yearEl.textContent = new Date().getFullYear();
+}
 
+/* ===============================
+   PAGE-LOAD ANIMATION TRIGGER
+   (THIS FIXES THE MISSING HERO)
+================================ */
+requestAnimationFrame(() => {
+  document.documentElement.classList.add("is-loaded");
+});
 
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
-<!-- Page-load animation trigger -->
-<script>
-  requestAnimationFrame(() => {
-    document.documentElement.classList.add("is-loaded");
-  });
-</script>
-
-<script>
+/* ===============================
+   BIZ CAROUSEL AUTO-SCROLL
+================================ */
 (() => {
   const strip = document.querySelector(".biz-strip");
   const track = document.getElementById("bizTrack");
@@ -20,7 +25,6 @@
   let intervalId = null;
   let paused = false;
   let userInteracting = false;
-
   const STEP_DELAY = 3000;
 
   const getStep = () => {
@@ -70,9 +74,10 @@
 
   start();
 })();
-</script>
 
-<script>
+/* ===============================
+   BIZ CAROUSEL ARROWS
+================================ */
 (() => {
   const strip = document.querySelector(".biz-strip");
   const track = document.getElementById("bizTrack");
@@ -98,10 +103,10 @@
     strip.scrollBy({ left: getStep(), behavior: "smooth" });
   });
 })();
-</script>
 
-<!-- ✅ ONE AND ONLY dropdown script (mobile only; desktop hover untouched) -->
-<script>
+/* ===============================
+   MOBILE SERVICES DROPDOWN
+================================ */
 (() => {
   const dd = document.querySelector(".nav-dropdown");
   const btn = dd?.querySelector(".nav-dropbtn");
@@ -109,7 +114,7 @@
   if (!dd || !btn || !menu) return;
 
   const isTouch = window.matchMedia("(hover: none), (pointer: coarse)").matches;
-  if (!isTouch) return; // desktop keeps hover behavior
+  if (!isTouch) return;
 
   const close = () => {
     dd.classList.remove("is-open");
@@ -133,26 +138,24 @@
     if (e.key === "Escape") close();
   });
 })();
-</script>
 
-  
-<script> // JS FOR FORM SUBMISSION TO TEXT MESSAGE NOTIFICATION
+/* ===============================
+   FORM SUBMISSION HANDLER
+================================ */
 (() => {
   const forms = document.querySelectorAll(".quote-form");
 
   forms.forEach((form) => {
     const card = form.closest(".hero-form-card");
     const thanks = card?.querySelector(".quote-thanks");
-
     if (!card || !thanks) return;
 
-    let submitting = false; // 👈 ADD THIS
+    let submitting = false;
 
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
-
-      if (submitting) return; // 👈 ADD THIS
-      submitting = true;      // 👈 ADD THIS
+      if (submitting) return;
+      submitting = true;
 
       const formData = new FormData(form);
 
@@ -166,14 +169,13 @@
           form.style.display = "none";
           thanks.style.display = "block";
         } else {
-          submitting = false; // 👈 reset on failure
+          submitting = false;
           alert("Something went wrong. Please try again or call us.");
         }
-      } catch (err) {
-        submitting = false; // 👈 reset on error
+      } catch {
+        submitting = false;
         alert("Network error. Please try again.");
       }
     });
   });
 })();
-</script>
