@@ -195,7 +195,7 @@ a{
 }
 
 .nav-logo img{
-  height: 120px;
+  height: 100px;
   width: auto;
   display: block;
   filter: drop-shadow(0 8px 18px rgba(0,0,0,0.35));
@@ -998,7 +998,7 @@ html.is-loaded .hero-sub{
 
 .footer-logo{
   width: auto;
-  height: 120px;
+  height: 100px;
   flex: 0 0 86px;
   display: block;
   object-fit: contain;
