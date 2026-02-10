@@ -1,330 +1,433 @@
-diff --git a/services.html b/services.html
-index 8b137891791fe96927ad78e64b0aad7bded08bdc..44ee2c0b3e2b3a8886abde6a56fcc9c13e38dc96 100644
---- a/services.html
-+++ b/services.html
-@@ -1 +1,325 @@
-+<!doctype html>
-+<html lang="en">
-+<head>
-+  <!-- Google tag (gtag.js) -->
-+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BRMXR8MN86"></script>
-+  <script>
-+    window.dataLayer = window.dataLayer || [];
-+    function gtag(){dataLayer.push(arguments);}
-+    gtag('js', new Date());
-+    gtag('config', 'G-BRMXR8MN86');
-+  </script>
-+  <meta charset="utf-8">
-+  <meta name="viewport" content="width=device-width, initial-scale=1">
-+  <title>All Services | Shoreline Exterior Systems</title>
-+  <meta name="description" content="Explore all Shoreline Exterior Systems services including stucco, EIFS, restoration, sealants, and more.">
-+  <meta property="og:title" content="All Services | Shoreline Exterior Systems">
-+  <meta property="og:description" content="Browse our complete exterior contracting service lineup in Sarasota, FL.">
-+  <meta property="og:type" content="website">
-+  <meta property="og:url" content="https://shorelineexteriorsystems.com/services.html">
-+  <meta property="og:image" content="https://shorelineexteriorsystems.com/assets/logo2222.webp">
-+  <meta property="og:image:alt" content="Shoreline Exterior Systems Logo">
-+  <link rel="icon" href="assets/favicon.ico">
-+  <link rel="stylesheet" href="styles.css">
-+</head>
- 
-+<body>
-+
-+<div class="top-contact-bar">
-+  <div class="top-contact-inner">
-+    <a class="top-contact-item" href="mailto:shorelineexteriorsystems@gmail.com">
-+      <span class="top-contact-icon" aria-hidden="true">✉</span>
-+      <div class="top-contact-text">
-+        <span class="top-contact-label">EMAIL US TODAY</span>
-+        <span class="top-contact-value">shorelineexteriorsystems@gmail.com</span>
-+      </div>
-+    </a>
-+
-+    <a class="top-contact-item" href="tel:19136365137">
-+      <span class="top-contact-icon phone-icon" aria-hidden="true">📞</span>
-+      <div class="top-contact-text">
-+        <span class="top-contact-label">CALL US NOW</span>
-+        <span class="top-contact-value">(913) 636-5137</span>
-+      </div>
-+    </a>
-+  </div>
-+</div>
-+
-+<nav class="top-nav">
-+  <div class="top-nav-inner">
-+    <div class="nav-left">
-+      <a href="./about.html">About</a>
-+
-+      <div class="nav-dropdown">
-+        <button class="nav-dropbtn nav-linklike" type="button" aria-haspopup="true" aria-expanded="false">
-+          Services <span class="nav-caret" aria-hidden="true">▾</span>
-+        </button>
-+
-+        <div class="nav-dropmenu" role="menu" aria-label="Services submenu">
-+          <a role="menuitem" href="./services.html">All Services</a>
-+          <a role="menuitem" href="./services/traditional-stucco.html">Traditional Stucco</a>
-+          <a role="menuitem" href="./services/eifs.html">Exterior Insulation Finish System (EIFS)</a>
-+          <a role="menuitem" href="./services/manufactured-stone-veneer.html">Manufactured Stone Veneer</a>
-+          <a role="menuitem" href="./services/repairs-restoration.html">Repairs and Restoration</a>
-+          <a role="menuitem" href="./services/fluid-applied-systems.html">Fluid-Applied Air and Moisture Systems</a>
-+          <a role="menuitem" href="./services/flashing-sealants.html">Flashing and Sealants</a>
-+          <a role="menuitem" href="./services/stucco-inspection.html">Stucco Inspection</a>
-+          <a role="menuitem" href="./services/architectural-foam.html">Architectural Foam Shapes and Trims</a>
-+        </div>
-+      </div>
-+    </div>
-+
-+    <a class="nav-logo" href="./index.html" aria-label="Home">
-+      <img src="assets/logo2222.webp" alt="Shoreline Exterior Systems" />
-+    </a>
-+
-+    <div class="nav-right">
-+      <a href="./reviews.html">Reviews</a>
-+      <a href="./contact.html">Contact</a>
-+    </div>
-+  </div>
-+</nav>
-+
-+<header class="top-hero services-hero">
-+  <div class="hero-overlay">
-+    <div class="hero-content hero-animate services-hero-content">
-+      <p class="hero-sub">COMPLETE EXTERIOR CONTRACTING SOLUTIONS</p>
-+      <h1 class="hero-title">Our Services</h1>
-+      <p class="services-hero-text">
-+        Shoreline Exterior Systems delivers end-to-end exterior systems for commercial and residential properties,
-+        from traditional stucco and EIFS to restoration, inspections, and high-performance moisture protection.
-+      </p>
-+    </div>
-+  </div>
-+</header>
-+
-+<section class="biz-pan" id="services-overview">
-+  <div class="container">
-+    <p class="biz-pan-kicker">Featured Services</p>
-+    <h2 class="biz-pan-title">Explore Our Core Exterior Services</h2>
-+    <div class="about-underline"></div>
-+    <p class="biz-pan-sub">
-+      Use the service strip below for a quick overview, then scroll into the detailed sections to learn more and visit each dedicated service page.
-+    </p>
-+  </div>
-+
-+  <div class="biz-wrap">
-+    <button class="biz-arrow left" type="button" aria-label="Scroll left">‹</button>
-+
-+    <div class="biz-strip" aria-label="Services carousel">
-+      <div class="biz-track" id="bizTrack">
-+        <a class="biz-card" href="#traditional-stucco" style="--bg:url('./assets/Traditional-Stucco.webp')">
-+          <div class="biz-overlay">
-+            <h3>Traditional Stucco</h3>
-+            <p>Classic cement stucco systems built for strength and durability.</p>
-+          </div>
-+        </a>
-+
-+        <a class="biz-card" href="#eifs" style="--bg:url('./assets/EIFS.webp')">
-+          <div class="biz-overlay">
-+            <h3>EIFS</h3>
-+            <p>Energy-conscious exterior systems with modern performance.</p>
-+          </div>
-+        </a>
-+
-+        <a class="biz-card" href="#manufactured-stone" style="--bg:url('./assets/flats-ready-stack-almond-buff-bb.webp')">
-+          <div class="biz-overlay">
-+            <h3>Stone Veneer</h3>
-+            <p>Decorative veneer finishes with premium curb appeal.</p>
-+          </div>
-+        </a>
-+
-+        <a class="biz-card" href="#repairs-restoration" style="--bg:url('./assets/REPAIRS.webp')">
-+          <div class="biz-overlay">
-+            <h3>Repairs & Restoration</h3>
-+            <p>Targeted repairs for cracks, weathering, and water damage.</p>
-+          </div>
-+        </a>
-+
-+        <a class="biz-card" href="#fluid-applied" style="--bg:url('./assets/fluid applied.webp')">
-+          <div class="biz-overlay">
-+            <h3>Fluid-Applied Systems</h3>
-+            <p>Continuous barriers that improve envelope protection.</p>
-+          </div>
-+        </a>
-+
-+        <a class="biz-card" href="#flashing-sealants" style="--bg:url('./assets/SEALANT.webp')">
-+          <div class="biz-overlay">
-+            <h3>Flashing & Sealants</h3>
-+            <p>Critical detailing that keeps moisture out of assemblies.</p>
-+          </div>
-+        </a>
-+
-+        <a class="biz-card" href="#stucco-inspection" style="--bg:url('./assets/STUCCO TREAT.webp')">
-+          <div class="biz-overlay">
-+            <h3>Stucco Inspection</h3>
-+            <p>Assessments that catch issues early and prevent escalation.</p>
-+          </div>
-+        </a>
-+
-+        <a class="biz-card" href="#architectural-foam" style="--bg:url('./assets/The-Role-of-Architectural-Foam-Shapes-in-EIFS-Design.webp')">
-+          <div class="biz-overlay">
-+            <h3>Architectural Foam</h3>
-+            <p>Custom trims and shapes to elevate façade design.</p>
-+          </div>
-+        </a>
-+      </div>
-+    </div>
-+
-+    <button class="biz-arrow right" type="button" aria-label="Scroll right">›</button>
-+  </div>
-+</section>
-+
-+<section class="services-main-sections">
-+  <div class="container">
-+    <div class="service-subsection" id="traditional-stucco">
-+      <h2>Traditional Stucco Services</h2>
-+      <p>High-quality traditional stucco installation and repair designed for long-term weather resistance and clean architectural finishes.</p>
-+      <a class="service-subsection-link" href="./services/traditional-stucco.html">View Traditional Stucco Service Page</a>
-+    </div>
-+
-+    <div class="service-subsection" id="eifs">
-+      <h2>Exterior Insulation Finish System (EIFS)</h2>
-+      <p>Complete EIFS scope including substrate prep, insulation board integration, and finish systems for energy efficiency and durable aesthetics.</p>
-+      <a class="service-subsection-link" href="./services/eifs.html">View EIFS Service Page</a>
-+    </div>
-+
-+    <div class="service-subsection" id="manufactured-stone">
-+      <h2>Manufactured Stone Veneer</h2>
-+      <p>Professionally installed stone veneer systems that add texture, depth, and visual impact to exterior walls and feature elements.</p>
-+      <a class="service-subsection-link" href="./services/manufactured-stone-veneer.html">View Manufactured Stone Veneer Service Page</a>
-+    </div>
-+
-+    <div class="service-subsection" id="repairs-restoration">
-+      <h2>Repairs and Restoration</h2>
-+      <p>Restoration-focused solutions for aging or damaged exteriors, including crack remediation, patching, and system refreshes.</p>
-+      <a class="service-subsection-link" href="./services/repairs-restoration.html">View Repairs and Restoration Service Page</a>
-+    </div>
-+
-+    <div class="service-subsection" id="fluid-applied">
-+      <h2>Fluid-Applied Air and Moisture Systems</h2>
-+      <p>Fluid-applied barriers engineered to improve wall assembly performance by reducing air leakage and controlling moisture intrusion.</p>
-+      <a class="service-subsection-link" href="./services/fluid-applied-systems.html">View Fluid-Applied Systems Service Page</a>
-+    </div>
-+
-+    <div class="service-subsection" id="flashing-sealants">
-+      <h2>Flashing and Sealants</h2>
-+      <p>Detail-oriented flashing and sealant installation for transitions, penetrations, and terminations that protect critical building joints.</p>
-+      <a class="service-subsection-link" href="./services/flashing-sealants.html">View Flashing and Sealants Service Page</a>
-+    </div>
-+
-+    <div class="service-subsection" id="stucco-inspection">
-+      <h2>Stucco Inspection and Treatment</h2>
-+      <p>Comprehensive stucco evaluation and treatment recommendations to identify hidden issues and preserve long-term system performance.</p>
-+      <a class="service-subsection-link" href="./services/stucco-inspection.html">View Stucco Inspection Service Page</a>
-+    </div>
-+
-+    <div class="service-subsection" id="architectural-foam">
-+      <h2>Architectural Foam Shapes and Trims</h2>
-+      <p>Custom foam profiles and trim details that enhance exterior style while integrating cleanly with stucco and EIFS assemblies.</p>
-+      <a class="service-subsection-link" href="./services/architectural-foam.html">View Architectural Foam Service Page</a>
-+    </div>
-+  </div>
-+</section>
-+
-+<footer class="site-footer">
-+  <div class="container footer-grid">
-+    <div class="footer-col">
-+      <h3>NAVIGATION</h3>
-+      <ul class="footer-links">
-+        <li><a href="./index.html">Home</a></li>
-+        <li><a href="./services.html">All Services</a></li>
-+        <li><a href="./about.html">About</a></li>
-+        <li><a href="./contact.html">Contact</a></li>
-+      </ul>
-+    </div>
-+
-+    <div class="footer-col">
-+      <h3>CONTACT</h3>
-+      <p class="footer-text">
-+        Sarasota, FL<br>
-+        <a href="mailto:shorelineexteriorsystems@gmail.com">shorelineexteriorsystems@gmail.com</a><br>
-+        <a href="tel:19136365137">(913) 636-5137</a>
-+      </p>
-+    </div>
-+  </div>
-+</footer>
-+
-+<section class="copyright-bar">
-+  <div class="container copyright-inner">
-+    <p>
-+      © <span id="year"></span> Shoreline Exterior Systems. All Rights Reserved ·
-+      <a href="./terms.html">Terms</a> ·
-+      <a href="./privacy.html">Privacy</a>
-+    </p>
-+  </div>
-+</section>
-+
-+<script>
-+  document.getElementById("year").textContent = new Date().getFullYear();
-+</script>
-+
-+<script>
-+(() => {
-+  const strip = document.querySelector(".biz-strip");
-+  const track = document.getElementById("bizTrack");
-+  const leftBtn = document.querySelector(".biz-arrow.left");
-+  const rightBtn = document.querySelector(".biz-arrow.right");
-+  if (!strip || !track || !leftBtn || !rightBtn) return;
-+
-+  const getStep = () => {
-+    const firstCard = track.querySelector(".biz-card");
-+    if (!firstCard) return 250;
-+
-+    const trackStyles = window.getComputedStyle(track);
-+    const gap = parseFloat(trackStyles.gap || "0");
-+    const cardWidth = firstCard.getBoundingClientRect().width;
-+    return cardWidth + gap;
-+  };
-+
-+  leftBtn.addEventListener("click", () => {
-+    strip.scrollBy({ left: -getStep(), behavior: "smooth" });
-+  });
-+
-+  rightBtn.addEventListener("click", () => {
-+    strip.scrollBy({ left: getStep(), behavior: "smooth" });
-+  });
-+})();
-+</script>
-+
-+<script>
-+(() => {
-+  const dd = document.querySelector(".nav-dropdown");
-+  const btn = dd?.querySelector(".nav-dropbtn");
-+  const menu = dd?.querySelector(".nav-dropmenu");
-+  if (!dd || !btn || !menu) return;
-+
-+  const isTouch = window.matchMedia("(hover: none), (pointer: coarse)").matches;
-+  if (!isTouch) return;
-+
-+  const close = () => {
-+    dd.classList.remove("is-open");
-+    btn.setAttribute("aria-expanded", "false");
-+  };
-+
-+  btn.addEventListener("click", (e) => {
-+    e.preventDefault();
-+    e.stopPropagation();
-+    const open = dd.classList.toggle("is-open");
-+    btn.setAttribute("aria-expanded", open ? "true" : "false");
-+  });
-+
-+  menu.addEventListener("click", (e) => e.stopPropagation());
-+
-+  document.addEventListener("click", (e) => {
-+    if (!dd.contains(e.target)) close();
-+  });
-+
-+  document.addEventListener("keydown", (e) => {
-+    if (e.key === "Escape") close();
-+  });
-+})();
-+</script>
-+
-+</body>
-+</html>
+<!doctype html>
+<html lang="en">
+<head>
+ <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BRMXR8MN86"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BRMXR8MN86');
+</script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services | Shoreline Exterior Systems</title>
+  <meta name="description" content="Exterior contracting services in Sarasota, FL — stucco, EIFS, manufactured stone veneer, repairs, moisture systems, flashing, inspections, and architectural foam.">
+
+  <!-- Open Graph / iMessage Preview -->
+  <meta property="og:title" content="Services | Shoreline Exterior Systems">
+  <meta property="og:description" content="Explore our full range of exterior contracting services in Sarasota, FL.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shorelineexteriorsystems.com/services.html">
+  <meta property="og:image" content="https://shorelineexteriorsystems.com/assets/logo2222.webp">
+
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- TOP CONTACT BAR -->
+<div class="top-contact-bar">
+  <div class="top-contact-inner">
+
+    <a class="top-contact-item" href="mailto:shorelineexteriorsystems@gmail.com">
+      <span class="top-contact-icon" aria-hidden="true">✉</span>
+      <div class="top-contact-text">
+        <span class="top-contact-label">EMAIL US TODAY</span>
+        <span class="top-contact-value">shorelineexteriorsystems@gmail.com</span>
+      </div>
+    </a>
+
+    <a class="top-contact-item" href="tel:19136365137">
+      <span class="top-contact-icon phone-icon" aria-hidden="true">📞</span>
+      <div class="top-contact-text">
+        <span class="top-contact-label">CALL US NOW</span>
+        <span class="top-contact-value">(913) 636-5137</span>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<!-- NAV (EXACT LINK MAP FROM YOUR INDEX) -->
+<nav class="top-nav">
+  <div class="top-nav-inner">
+    <div class="nav-left">
+      <a href="./about.html">About</a>
+
+      <div class="nav-dropdown">
+        <button class="nav-dropbtn nav-linklike" type="button" aria-haspopup="true" aria-expanded="false">
+          Services <span class="nav-caret" aria-hidden="true">▾</span>
+        </button>
+
+        <div class="nav-dropmenu" role="menu" aria-label="Services submenu">
+          <a role="menuitem" href="./services.html">All Services</a>
+          <a role="menuitem" href="./services/traditional-stucco.html">Traditional Stucco</a>
+          <a role="menuitem" href="./services/eifs.html">Exterior Insulation Finish System (EIFS)</a>
+          <a role="menuitem" href="./services/manufactured-stone-veneer.html">Manufactured Stone Veneer</a>
+          <a role="menuitem" href="./services/repairs-restoration.html">Repairs and Restoration</a>
+          <a role="menuitem" href="./services/fluid-applied-systems.html">Fluid-Applied Air and Moisture Systems</a>
+          <a role="menuitem" href="./services/flashing-sealants.html">Flashing and Sealants</a>
+          <a role="menuitem" href="./services/stucco-inspection.html">Stucco Inspection</a>
+          <a role="menuitem" href="./services/architectural-foam.html">Architectural Foam Shapes and Trims</a>
+        </div>
+      </div>
+    </div>
+
+    <a class="nav-logo" href="./index.html" aria-label="Home">
+      <img src="assets/logo2222.webp" alt="Shoreline Exterior Systems" />
+    </a>
+
+    <div class="nav-right">
+      <a href="./reviews.html">Reviews</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO (services page header) -->
+<header class="top-hero">
+  <div class="hero-overlay">
+    <div class="hero-content hero-animate hero-split">
+      <div class="hero-left">
+        <h1 class="hero-title">Services</h1>
+        <div class="hero-subs">
+          <p class="hero-sub">RESIDENTIAL & COMMERCIAL EXTERIOR SERVICES</p>
+          <p class="hero-sub">STUCCO · EIFS · STONE VENEER · REPAIRS · MOISTURE SYSTEMS · INSPECTIONS</p>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-form-card">
+          <h3 class="form-title">Request a Free Quote</h3>
+          <p class="form-subtitle">We’ll call you back fast.</p>
+
+          <form class="quote-form" action="INSERT CLOUDFARE CODE OR SUMMIT FLOW" method="POST">
+            <input type="hidden" name="_subject" value="🚰 New Quote Request — Shoreline Exterior Systems (Website)">
+            <input type="text" name="_gotcha" style="display:none">
+            <input name="fullName" type="text" placeholder="Full Name" required />
+            <input name="phone" type="tel" placeholder="Phone Number" required />
+            <input name="email" type="email" placeholder="Email Address" required />
+            <textarea name="message" rows="4" placeholder="Please let us know how we can help you." required></textarea>
+            <button type="submit">Request a Free Quote</button>
+          </form>
+
+          <div class="quote-thanks" style="display:none; text-align:center;">
+            <h3 class="form-title">Thank You!</h3>
+            <p class="form-subtitle">We received your request and will call you shortly.</p>
+          </div>
+
+          <p class="form-disclaimer">
+            By submitting, you agree to receive calls/texts. Msg/data rates may apply.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- SERVICES (BIZ CARD SYSTEM — EXACT HREFS FROM INDEX) -->
+<section class="biz-pan" id="services">
+  <div class="container">
+    <p class="biz-pan-kicker">
+      <span class="services-link">SERVICES</span>
+    </p>
+
+    <h2 class="biz-pan-title">Exterior Contracting Services in Sarasota, FL</h2>
+    <div class="about-underline"></div>
+
+    <p class="biz-pan-sub">
+      Explore our full range of exterior services. Tap any service to view details, photos, and service-specific information.
+    </p>
+  </div>
+
+  <div class="biz-wrap">
+    <button class="biz-arrow left" type="button" aria-label="Scroll left">‹</button>
+
+    <div class="biz-strip" aria-label="Services carousel">
+      <div class="biz-track" id="bizTrack">
+
+        <a class="biz-card" href="./services/traditional-stucco.html" style="--bg:url('./assets/Traditional-Stucco.webp')">
+          <div class="biz-overlay">
+            <h3>Traditional Stucco</h3>
+            <p>Installation and repair of cement stucco systems built for durability.</p>
+          </div>
+        </a>
+
+        <a class="biz-card" href="./services/eifs.html" style="--bg:url('./assets/EIFS.webp')">
+          <div class="biz-overlay">
+            <h3>Exterior Insulation Finish System (EIFS)</h3>
+            <p>High-performance EIFS solutions to improve insulation and moisture control.</p>
+          </div>
+        </a>
+
+        <a class="biz-card" href="./services/manufactured-stone-veneer.html" style="--bg:url('./assets/flats-ready-stack-almond-buff-bb.webp')">
+          <div class="biz-overlay">
+            <h3>Manufactured Stone Veneer</h3>
+            <p>Architectural stone veneer that elevates curb appeal and detail.</p>
+          </div>
+        </a>
+
+        <a class="biz-card" href="./services/repairs-restoration.html" style="--bg:url('./assets/REPAIRS.webp')">
+          <div class="biz-overlay">
+            <h3>Repairs and Restoration</h3>
+            <p>Exterior repair and restoration for cracks, damage, and water intrusion.</p>
+          </div>
+        </a>
+
+        <a class="biz-card" href="./services/fluid-applied-systems.html" style="--bg:url('./assets/fluid applied.webp')">
+          <div class="biz-overlay">
+            <h3>Fluid-Applied Air and Moisture Systems</h3>
+            <p>Seamless barrier systems that protect building envelopes long-term.</p>
+          </div>
+        </a>
+
+        <a class="biz-card" href="./services/flashing-sealants.html" style="--bg:url('./assets/SEALANT.webp')">
+          <div class="biz-overlay">
+            <h3>Flashing and Sealants</h3>
+            <p>Precision terminations and waterproofing to safeguard structural integrity.</p>
+          </div>
+        </a>
+
+        <a class="biz-card" href="./services/stucco-inspection.html" style="--bg:url('./assets/STUCCO TREAT.webp')">
+          <div class="biz-overlay">
+            <h3>Stucco Inspection and Treatment</h3>
+            <p>Inspections to identify moisture issues, failures, and needed repairs.</p>
+          </div>
+        </a>
+
+        <a class="biz-card" href="./services/architectural-foam.html" style="--bg:url('./assets/The-Role-of-Architectural-Foam-Shapes-in-EIFS-Design.webp')">
+          <div class="biz-overlay">
+            <h3>Architectural Foam Shapes and Trims</h3>
+            <p>Custom foam shapes and trim details that elevate exterior design.</p>
+          </div>
+        </a>
+
+      </div>
+
+      <button class="biz-arrow right" type="button" aria-label="Scroll right">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE HIGHLIGHTS (each section links to its page) -->
+<section class="about-split">
+  <div class="container about-split-grid">
+    <div class="about-split-text">
+      <p class="about-kicker"><a class="about-link" href="./services/traditional-stucco.html">Traditional Stucco <span class="about-arrow">›</span></a></p>
+      <h2 class="about-title">TRADITIONAL STUCCO INSTALLATION & REPAIR</h2>
+      <div class="about-underline"></div>
+      <p class="about-body">Professional cement stucco systems built for durability, weather resistance, and long-term exterior performance.</p>
+      <a class="last-cta-phone" href="./services/traditional-stucco.html">View Traditional Stucco →</a>
+    </div>
+    <div class="about-split-image">
+      <img src="./assets/Traditional-Stucco.webp" alt="Traditional Stucco Services">
+    </div>
+  </div>
+</section>
+
+<section class="about-split">
+  <div class="container about-split-grid">
+    <div class="about-split-text">
+      <p class="about-kicker"><a class="about-link" href="./services/eifs.html">EIFS <span class="about-arrow">›</span></a></p>
+      <h2 class="about-title">EIFS SYSTEMS FOR PERFORMANCE & INSULATION</h2>
+      <div class="about-underline"></div>
+      <p class="about-body">High-performance EIFS solutions designed to improve insulation, moisture control, and modern exterior appearance.</p>
+      <a class="last-cta-phone" href="./services/eifs.html">View EIFS →</a>
+    </div>
+    <div class="about-split-image">
+      <img src="./assets/EIFS.webp" alt="EIFS Services">
+    </div>
+  </div>
+</section>
+
+<section class="about-split">
+  <div class="container about-split-grid">
+    <div class="about-split-text">
+      <p class="about-kicker"><a class="about-link" href="./services/manufactured-stone-veneer.html">Stone Veneer <span class="about-arrow">›</span></a></p>
+      <h2 class="about-title">MANUFACTURED STONE VENEER FINISHES</h2>
+      <div class="about-underline"></div>
+      <p class="about-body">Architectural stone veneer installations that enhance curb appeal, add texture, and create a premium exterior finish.</p>
+      <a class="last-cta-phone" href="./services/manufactured-stone-veneer.html">View Stone Veneer →</a>
+    </div>
+    <div class="about-split-image">
+      <img src="./assets/flats-ready-stack-almond-buff-bb.webp" alt="Manufactured Stone Veneer Services">
+    </div>
+  </div>
+</section>
+
+<section class="about-split">
+  <div class="container about-split-grid">
+    <div class="about-split-text">
+      <p class="about-kicker"><a class="about-link" href="./services/repairs-restoration.html">Repairs & Restoration <span class="about-arrow">›</span></a></p>
+      <h2 class="about-title">REPAIRS & RESTORATION</h2>
+      <div class="about-underline"></div>
+      <p class="about-body">Exterior repair and restoration services addressing cracks, surface damage, water intrusion, and aging systems.</p>
+      <a class="last-cta-phone" href="./services/repairs-restoration.html">View Repairs & Restoration →</a>
+    </div>
+    <div class="about-split-image">
+      <img src="./assets/REPAIRS.webp" alt="Repairs and Restoration Services">
+    </div>
+  </div>
+</section>
+
+<section class="about-split">
+  <div class="container about-split-grid">
+    <div class="about-split-text">
+      <p class="about-kicker"><a class="about-link" href="./services/fluid-applied-systems.html">Fluid-Applied Systems <span class="about-arrow">›</span></a></p>
+      <h2 class="about-title">FLUID-APPLIED AIR & MOISTURE SYSTEMS</h2>
+      <div class="about-underline"></div>
+      <p class="about-body">Seamless air and moisture barrier systems applied to protect building envelopes and prevent long-term water intrusion.</p>
+      <a class="last-cta-phone" href="./services/fluid-applied-systems.html">View Fluid-Applied Systems →</a>
+    </div>
+    <div class="about-split-image">
+      <img src="./assets/fluid applied.webp" alt="Fluid-Applied Systems">
+    </div>
+  </div>
+</section>
+
+<section class="about-split">
+  <div class="container about-split-grid">
+    <div class="about-split-text">
+      <p class="about-kicker"><a class="about-link" href="./services/flashing-sealants.html">Flashing & Sealants <span class="about-arrow">›</span></a></p>
+      <h2 class="about-title">FLASHING & SEALANTS</h2>
+      <div class="about-underline"></div>
+      <p class="about-body">Precision flashing and sealant installation to properly terminate exterior systems and safeguard structural integrity.</p>
+      <a class="last-cta-phone" href="./services/flashing-sealants.html">View Flashing & Sealants →</a>
+    </div>
+    <div class="about-split-image">
+      <img src="./assets/SEALANT.webp" alt="Flashing and Sealants">
+    </div>
+  </div>
+</section>
+
+<section class="about-split">
+  <div class="container about-split-grid">
+    <div class="about-split-text">
+      <p class="about-kicker"><a class="about-link" href="./services/stucco-inspection.html">Stucco Inspection <span class="about-arrow">›</span></a></p>
+      <h2 class="about-title">STUCCO INSPECTION & TREATMENT</h2>
+      <div class="about-underline"></div>
+      <p class="about-body">Comprehensive stucco inspections to identify moisture issues, system failures, and necessary repairs before major damage occurs.</p>
+      <a class="last-cta-phone" href="./services/stucco-inspection.html">View Stucco Inspection →</a>
+    </div>
+    <div class="about-split-image">
+      <img src="./assets/STUCCO TREAT.webp" alt="Stucco Inspection">
+    </div>
+  </div>
+</section>
+
+<section class="about-split">
+  <div class="container about-split-grid">
+    <div class="about-split-text">
+      <p class="about-kicker"><a class="about-link" href="./services/architectural-foam.html">Architectural Foam <span class="about-arrow">›</span></a></p>
+      <h2 class="about-title">ARCHITECTURAL FOAM SHAPES & TRIMS</h2>
+      <div class="about-underline"></div>
+      <p class="about-body">Custom architectural foam shapes and trim details that enhance exterior design and elevate the finished appearance of your property.</p>
+      <a class="last-cta-phone" href="./services/architectural-foam.html">View Architectural Foam →</a>
+    </div>
+    <div class="about-split-image">
+      <img src="./assets/The-Role-of-Architectural-Foam-Shapes-in-EIFS-Design.webp" alt="Architectural Foam Shapes and Trims">
+    </div>
+  </div>
+</section>
+
+<!-- LAST CTA (COPIED FROM YOUR INDEX) -->
+<section class="last-cta">
+  <div class="last-cta-grid">
+
+    <div class="last-cta-photo" aria-hidden="true"></div>
+
+    <div class="last-cta-panel">
+      <h2 class="last-cta-title">
+        <span class="cta-orange">NEED A LICENSED SARASOTA EXTERIOR CONTRACTOR?</span><br>
+        WE’RE HERE FOR YOU!
+      </h2>
+
+      <p class="last-cta-sub">
+        RESIDENTIAL & COMMERCIAL EXTERIOR SERVICES AVAILABLE.
+      </p>
+
+      <div class="last-cta-line"></div>
+
+      <p class="last-cta-body">
+        No matter when exterior issues arise, Shoreline Exterior Systems is just a call away.
+        From repairs to full exterior system installations, our team delivers reliable,
+        professional service built to last.
+        Don’t wait—get dependable exterior contracting services from a trusted Sarasota contractor.
+      </p>
+
+      <a class="last-cta-phone" href="tel:19136365137">
+        ☎ +1 (913) 636-5137
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER (COPIED FROM YOUR INDEX) -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+
+    <div class="footer-col footer-brand">
+      <div class="footer-brand-row">
+        <img class="footer-logo" src="./assets/logo2222.webp" alt="Shoreline Exterior Systems Logo" />
+        <p class="footer-text">
+          Shoreline Exterior Systems is a licensed Sarasota exterior contracting company providing
+          external commercial services and repairs.
+          Honest work. Fast response. No shortcuts.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h3>SERVICES</h3>
+      <ul class="footer-links">
+        <li><a href="./services/traditional-stucco.html">Traditional Stucco</a></li>
+        <li><a href="./services/eifs.html">Exterior Insulation Finish System (EIFS)</a></li>
+        <li><a href="./services/manufactured-stone-veneer.html">Manufactured Stone Veneer</a></li>
+        <li><a href="./services/repairs-restoration.html">Repairs and Restoration</a></li>
+        <li><a href="./services/fluid-applied-systems.html">Fluid-Applied Air and Moisture Systems</a></li>
+        <li><a href="./services/flashing-sealants.html">Flashing and Sealants</a></li>
+        <li><a href="./services/stucco-inspection.html">Stucco Inspection</a></li>
+        <li><a href="./services/architectural-foam.html">Architectural Foam Shapes and Trims</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>COMPANY</h3>
+      <ul class="footer-links">
+        <li><a href="./services.html">All Services</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./reviews.html">Reviews</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>CONTACT</h3>
+      <p class="footer-text">
+        Sarasota, FL<br />
+        <a href="mailto:shorelineexteriorsystems@gmail.com">shorelineexteriorsystems@gmail.com</a><br />
+        <a href="tel:19136365137">(913) 636-5137</a>
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+<section class="copyright-bar">
+  <div class="container copyright-inner">
+    <p>
+      © <span id="year"></span> Shoreline Exterior Systems. All Rights Reserved ·
+      <a href="./terms.html">Terms</a> ·
+      <a href="./privacy.html">Privacy</a>
+    </p>
+  </div>
+</section>
+
+
+
+</body>
+</html>
