@@ -1791,3 +1791,14 @@ select,
     column-gap: 56px;
   }
 }
+
+@media (max-width: 900px){
+  .project-row.project-3 .project-image{
+    grid-row: 2;
+  }
+
+  .project-row.project-3 .project-content{
+    grid-row: 1;
+  }
+}
+
