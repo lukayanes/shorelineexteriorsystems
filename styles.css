@@ -1709,3 +1709,41 @@ select,
   }
 }
 
+/* ===============================
+   MOBILE NAV — SLIM VERSION
+================================ */
+@media (max-width: 768px){
+
+  /* NAV BAR */
+  .top-nav{
+    padding: 0 12px;        /* no vertical padding */
+  }
+
+  /* KEEP EVERYTHING IN ONE ROW */
+  .top-nav-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  /* LOGO — SMALLER ON MOBILE */
+  .nav-logo img{
+    height: 64px;           /* 🔥 THIS is the big win */
+    width: auto;
+  }
+
+  /* LEFT / RIGHT LINKS */
+  .nav-left,
+  .nav-right{
+    gap: 12px;
+  }
+
+  /* TEXT SLIGHTLY SMALLER */
+  .nav-left a,
+  .nav-right a,
+  .nav-dropbtn{
+    font-size: 15px;
+    line-height: 1;
+  }
+}
