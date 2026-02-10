@@ -1731,7 +1731,7 @@ select,
 
   /* LOGO — SMALLER ON MOBILE */
   .nav-logo img{
-    height: 64px;           /* 🔥 THIS is the big win */
+    height: 85px;           /* 🔥 THIS is the big win */
     width: auto;
   }
 
