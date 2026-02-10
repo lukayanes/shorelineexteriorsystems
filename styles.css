@@ -1779,8 +1779,8 @@ select,
 
 /* SERVICES DROPDOWN — SMALLER ITEM TEXT ONLY */
 .nav-dropmenu a{
-  font-size: 15px;        /* smaller than nav text */
-  line-height: 1.25;
+  font-size: 16px;        /* smaller than nav text */
+  line-height: 1.15;
   letter-spacing: 0.04em;
 }
 
