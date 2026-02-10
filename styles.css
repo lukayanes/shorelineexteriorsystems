@@ -1757,3 +1757,8 @@ select,
       drop-shadow(0 0 20px rgba(95,175,176,0.85));
   }
 }
+
+/* HOW IT WORKS — NAVY TITLE */
+.how-it-works .about-title{
+  color: var(--navy);
+}
