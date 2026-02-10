@@ -45,29 +45,33 @@
   </div>
 </div>
 
+<!-- NAV -->
 <nav class="top-nav">
   <div class="top-nav-inner">
     <div class="nav-left">
       <a href="./about.html">About</a>
 
       <div class="nav-dropdown">
-        <button class="nav-dropbtn nav-linklike" type="button">
-          Services <span class="nav-caret">▾</span>
+        <button class="nav-dropbtn nav-linklike" type="button" aria-haspopup="true" aria-expanded="false">
+          Services <span class="nav-caret" aria-hidden="true">▾</span>
         </button>
 
-        <div class="nav-dropmenu">
-          <a href="./services.html">All Services</a>
-          <a href="./services/traditional-stucco.html">Traditional Stucco</a>
-          <a href="./services/eifs.html">EIFS</a>
-          <a href="./services/manufactured-stone-veneer.html">Stone Veneer</a>
-          <a href="./services/repairs-restoration.html">Repairs</a>
-          <a href="./services/fluid-applied-systems.html">Fluid Systems</a>
+        <div class="nav-dropmenu" role="menu" aria-label="Services submenu">
+          <a role="menuitem" href="./services.html">All Services</a>
+          <a role="menuitem" href="./services/traditional-stucco.html">Traditional Stucco</a>
+          <a role="menuitem" href="./services/eifs.html">Exterior Insulation Finish System (EIFS)</a>
+          <a role="menuitem" href="./services/manufactured-stone-veneer.html">Manufactured Stone Veneer</a>
+          <a role="menuitem" href="./services/repairs-restoration.html">Repairs and Restoration</a>
+          <a role="menuitem" href="./services/fluid-applied-systems.html">Fluid-Applied Air and Moisture Systems</a>
+          <a role="menuitem" href="./services/flashing-sealants.html">Flashing and Sealants</a>
+          <a role="menuitem" href="./services/stucco-inspection.html">Stucco Inspection</a>
+          <a role="menuitem" href="./services/architectural-foam.html">Architectural Foam Shapes and Trims</a>
         </div>
       </div>
     </div>
 
-    <a class="nav-logo" href="./index.html">
-      <img src="assets/logo2222.webp" alt="Shoreline Exterior Systems">
+    <a class="nav-logo" href="./index.html" aria-label="Home">
+      <img src="assets/logo2222.webp" alt="Shoreline Exterior Systems" />
     </a>
 
     <div class="nav-right">
@@ -76,7 +80,6 @@
     </div>
   </div>
 </nav>
-
 <header class="top-hero">
   <div class="hero-overlay">
     <div class="hero-content hero-animate">
