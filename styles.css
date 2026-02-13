@@ -1802,60 +1802,6 @@ select,
   }
 }
 
-/* =========================================
-   GHL INLINE FORM — GRID CONTAINMENT FIX
-   Prevent iframe from overlaying hero text
-========================================= */
-
-/* Lock grid behavior */
-.hero-split{
-  align-items: start;
-}
-
-/* Hard contain the right column */
-.hero-right{
-  position: relative;
-  max-width: 420px;
-  width: 100%;
-  overflow: hidden;
-}
-
-/* Contain the card */
-.hero-form-card{
-  position: relative;
-  width: 100%;
-  max-width: 420px;
-  overflow: hidden;
-}
-
-/* OVERRIDE GHL runtime styles */
-.hero-form-card iframe{
-  position: static !important;
-  display: block !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  height: auto !important;
-  min-height: 560px;
-  transform: none !important;
-}
-
-/* Ensure left hero text always renders normally */
-.hero-left{
-  position: relative;
-  overflow: visible;
-}
-
-/* Mobile safety */
-@media (max-width: 900px){
-  .hero-right,
-  .hero-form-card{
-    max-width: 100%;
-  }
-
-  .hero-form-card iframe{
-    min-height: 680px;
-  }
-}
 
 /* =========================================
    HERO + GHL IFRAME — COMPOSITING FIX
