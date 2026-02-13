@@ -301,18 +301,7 @@ a{
 /* ===============================
    HERO (background + zoom + split)
 ================================ */
-.top-hero{
-  min-height: 92vh;
-  position: relative;
-  overflow: hidden;
 
-  background:
-    linear-gradient(var(--hero-overlay), var(--hero-overlay)),
-    url("./assets/flmanhero3.webp") center/cover no-repeat;
-
-  /* push hero content below fixed bars WITHOUT creating a gap above hero */
-  padding-top: calc(var(--contact-bar-h) + 120px);
-}
 
 /* Zoom ONLY the background (not the nav/text) */
 .top-hero::before{
@@ -353,11 +342,6 @@ html.is-loaded .top-hero::before{
   padding: 0 18px 60px;
 }
 
-.top-hero{
-  background:
-    linear-gradient(var(--hero-overlay), var(--hero-overlay)),
-    url("./assets/flmanhero3.webp") center top/cover no-repeat;
-}
 
 .hero-overlay{
   padding-top: 90px;
