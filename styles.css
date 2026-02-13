@@ -1803,38 +1803,57 @@ select,
 }
 
 /* =========================================
-   HERO LAYER FIX — KEEP TITLES VISIBLE
+   GHL INLINE FORM — GRID CONTAINMENT FIX
+   Prevent iframe from overlaying hero text
 ========================================= */
 
-/* Ensure hero content establishes a stacking context */
-.hero-content{
-  position: relative;
-  z-index: 2;
+/* Lock grid behavior */
+.hero-split{
+  align-items: start;
 }
 
-/* Left side text always above */
-.hero-left{
-  position: relative;
-  z-index: 3;
-}
-
-/* Right side form stays below text layer */
+/* Hard contain the right column */
 .hero-right{
   position: relative;
-  z-index: 2;
-}
-
-/* Iframe cannot escape its card */
-.hero-form-card{
-  position: relative;
-  z-index: 1;
+  max-width: 420px;
+  width: 100%;
   overflow: hidden;
 }
 
-/* Explicitly cap iframe layer */
-.hero-form-card iframe{
+/* Contain the card */
+.hero-form-card{
   position: relative;
-  z-index: 1;
-  pointer-events: auto;
+  width: 100%;
+  max-width: 420px;
+  overflow: hidden;
+}
+
+/* OVERRIDE GHL runtime styles */
+.hero-form-card iframe{
+  position: static !important;
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 560px;
+  transform: none !important;
+}
+
+/* Ensure left hero text always renders normally */
+.hero-left{
+  position: relative;
+  overflow: visible;
+}
+
+/* Mobile safety */
+@media (max-width: 900px){
+  .hero-right,
+  .hero-form-card{
+    max-width: 100%;
+  }
+
+  .hero-form-card iframe{
+    min-height: 680px;
+  }
 }
 
