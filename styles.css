@@ -1802,3 +1802,39 @@ select,
   }
 }
 
+/* =========================================
+   HERO LAYER FIX — KEEP TITLES VISIBLE
+========================================= */
+
+/* Ensure hero content establishes a stacking context */
+.hero-content{
+  position: relative;
+  z-index: 2;
+}
+
+/* Left side text always above */
+.hero-left{
+  position: relative;
+  z-index: 3;
+}
+
+/* Right side form stays below text layer */
+.hero-right{
+  position: relative;
+  z-index: 2;
+}
+
+/* Iframe cannot escape its card */
+.hero-form-card{
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Explicitly cap iframe layer */
+.hero-form-card iframe{
+  position: relative;
+  z-index: 1;
+  pointer-events: auto;
+}
+
