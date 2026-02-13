@@ -180,5 +180,4 @@ requestAnimationFrame(() => {
   });
 })();
 
-<!-- GHL FORM SCRIPT (REQUIRED) -->
-<script src="https://links.summitflowcrm.com/js/form_embed.js"></script>
+
