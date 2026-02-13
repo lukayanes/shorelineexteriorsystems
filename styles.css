@@ -1857,3 +1857,34 @@ select,
   }
 }
 
+/* =========================================
+   HERO + GHL IFRAME — COMPOSITING FIX
+   (PREVENTS HERO TITLE DISAPPEARING)
+========================================= */
+
+/* Force hero grid into stable paint order */
+.hero-split{
+  position: relative;
+  isolation: isolate;
+}
+
+/* Left hero text explicitly preserved */
+.hero-left{
+  position: relative;
+  z-index: 2;
+}
+
+/* Isolate form card from hero background */
+.hero-form-card{
+  position: relative;
+  isolation: isolate;
+  z-index: 1;
+}
+
+/* iframe stays contained */
+.hero-form-card iframe{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  border: none;
+}
