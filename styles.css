@@ -1836,3 +1836,12 @@ select,
   -webkit-backdrop-filter: none !important;
   background: rgba(255,255,255,0.14); /* visually identical fallback */
 }
+
+/* =========================================
+   HERO TEXT — FORCE ABOVE BACKGROUND
+========================================= */
+
+.hero-content{
+  position: relative;
+  z-index: 2;
+}
