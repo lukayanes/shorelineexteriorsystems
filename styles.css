@@ -301,6 +301,12 @@ a{
 /* ===============================
    HERO (background + zoom + split)
 ================================ */
+.top-hero{
+  min-height: 92vh;
+  position: relative;
+  overflow: hidden;
+  padding-top: calc(var(--contact-bar-h) + 120px);
+}
 
 
 /* Zoom ONLY the background (not the nav/text) */
