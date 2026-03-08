@@ -1845,3 +1845,9 @@ select,
   position: relative;
   z-index: 2;
 }
+
+
+/* Legal page section titles */
+.about-split-text h3{
+  color:#5FAFB0;
+}
