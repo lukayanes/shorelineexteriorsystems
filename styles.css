@@ -1961,3 +1961,44 @@ PROJECT FEATURED IMAGE
     font-size: 22px;
   }
 }
+
+/* ===============================
+LIGHTBOX
+=============================== */
+
+.project-img{
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.project-img:hover{
+  transform: scale(1.03);
+}
+
+/* overlay */
+.lightbox{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
+/* image */
+.lightbox-img{
+  max-width: 90%;
+  max-height: 85%;
+  border-radius: 10px;
+}
+
+/* close button */
+.lightbox-close{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
