@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-<!-- GOOGLE TAG (UNCHANGED) -->
+<!-- GOOGLE TAG -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BRMXR8MN86"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -23,7 +23,9 @@ gtag('config', 'G-BRMXR8MN86');
 
 <body>
 
-<!-- TOP CONTACT BAR (UNCHANGED) -->
+<!-- ===============================
+TOP CONTACT BAR (UNCHANGED)
+=============================== -->
 <div class="top-contact-bar">
   <div class="top-contact-inner">
 
@@ -46,7 +48,9 @@ gtag('config', 'G-BRMXR8MN86');
   </div>
 </div>
 
-<!-- NAV (UNCHANGED) -->
+<!-- ===============================
+NAV (UNCHANGED)
+=============================== -->
 <nav class="top-nav">
   <div class="top-nav-inner">
 
@@ -68,14 +72,13 @@ gtag('config', 'G-BRMXR8MN86');
 </nav>
 
 <!-- ===============================
-HERO (EXACT SAME STRUCTURE)
+HERO (EXACT SAME STRUCTURE — DO NOT TOUCH)
 =============================== -->
-<body class="projects-page">
-
 <header class="top-hero">
   <div class="hero-overlay">
     <div class="hero-content hero-animate hero-split">
 
+      <!-- LEFT -->
       <div class="hero-left">
         <h1 class="hero-title">Our Projects</h1>
 
@@ -87,7 +90,7 @@ HERO (EXACT SAME STRUCTURE)
         </div>
       </div>
 
-      <!-- SAME RIGHT SIDE (UNCHANGED STRUCTURE) -->
+      <!-- RIGHT (KEEP STRUCTURE SO GRID DOESN’T BREAK) -->
       <div class="hero-right">
         <div class="hero-form-card">
           <iframe
@@ -103,16 +106,22 @@ HERO (EXACT SAME STRUCTURE)
 </header>
 
 <!-- ===============================
-PROJECTS SECTION (NEW)
+PROJECTS SECTION
 =============================== -->
 <section class="projects-page">
 
-  <!-- PROJECT 1 -->
+  <div class="container">
+
+    <p class="about-kicker">PROJECTS</p>
+    <h2 class="about-title">RECENT WORK</h2>
+    <div class="about-underline"></div>
+
+  </div>
+
+  <!-- PROJECT -->
   <div class="project-block container">
 
-    <p class="about-kicker">PROJECT</p>
-    <h2 class="about-title">Commercial Stucco Restoration</h2>
-    <div class="about-underline"></div>
+    <h3 class="project-title">Commercial Stucco Restoration</h3>
 
     <div class="project-meta">
       <span>Sarasota, FL</span>
@@ -136,12 +145,10 @@ PROJECTS SECTION (NEW)
 
   </div>
 
-  <!-- PROJECT 2 -->
+  <!-- PROJECT -->
   <div class="project-block container">
 
-    <p class="about-kicker">PROJECT</p>
-    <h2 class="about-title">EIFS Installation</h2>
-    <div class="about-underline"></div>
+    <h3 class="project-title">EIFS Installation</h3>
 
     <div class="project-meta">
       <span>Lakewood Ranch, FL</span>
@@ -152,7 +159,7 @@ PROJECTS SECTION (NEW)
     </div>
 
     <p class="project-text">
-      Full EIFS system install with insulation, drainage, and architectural detailing.
+      Full EIFS install including insulation, drainage, and architectural detailing.
     </p>
 
     <div class="project-scroll">
@@ -164,39 +171,14 @@ PROJECTS SECTION (NEW)
 
   </div>
 
-  <!-- PROJECT 3 -->
-  <div class="project-block container">
-
-    <p class="about-kicker">PROJECT</p>
-    <h2 class="about-title">Stone Veneer Upgrade</h2>
-    <div class="about-underline"></div>
-
-    <div class="project-meta">
-      <span>Bradenton, FL</span>
-      <span>•</span>
-      <span>Residential</span>
-      <span>•</span>
-      <span>3 Weeks</span>
-    </div>
-
-    <p class="project-text">
-      Custom veneer install to enhance curb appeal and exterior finish quality.
-    </p>
-
-    <div class="project-scroll">
-      <img src="./assets/project3/1.jpg">
-      <img src="./assets/project3/2.jpg">
-      <img src="./assets/project3/3.jpg">
-      <img src="./assets/project3/4.jpg">
-    </div>
-
-  </div>
-
 </section>
 
-<!-- CTA (UNCHANGED — COPY YOUR EXACT ONE) -->
+<!-- ===============================
+CTA (UNCHANGED)
+=============================== -->
 <section class="last-cta">
   <div class="last-cta-grid">
+
     <div class="last-cta-photo"></div>
 
     <div class="last-cta-panel">
@@ -213,12 +195,25 @@ PROJECTS SECTION (NEW)
         ☎ +1 (941) 265-1028
       </a>
     </div>
+
   </div>
 </section>
 
-<!-- FOOTER (UNCHANGED — USE YOUR EXACT) -->
+<!-- ===============================
+FOOTER (UNCHANGED)
+=============================== -->
 <footer class="site-footer">
+  <div class="container footer-grid">
+    <!-- KEEP YOUR EXACT FOOTER CONTENT -->
+  </div>
 </footer>
+
+<!-- REQUIRED FOR HERO ANIMATION -->
+<script>
+window.addEventListener("load", () => {
+  document.documentElement.classList.add("is-loaded");
+});
+</script>
 
 </body>
 </html>
