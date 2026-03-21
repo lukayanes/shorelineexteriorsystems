@@ -1852,4 +1852,55 @@ select,
   color:#5FAFB0;
 }
 
+/* ===============================
+PROJECT PAGE
+=============================== */
 
+.projects-hero::before{
+  background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("./assets/last-cta-photo.webp") center/cover no-repeat;
+}
+
+.project-block{
+  padding: 80px 0;
+}
+
+.project-details-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 20px 0;
+  font-weight: 700;
+}
+
+.project-description{
+  max-width: 700px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* SCROLL GALLERY */
+.project-scroll{
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.project-scroll img{
+  height: 260px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* MOBILE */
+@media (max-width: 900px){
+  .project-details-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project-scroll img{
+    height: 200px;
+  }
+}
