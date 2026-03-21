@@ -2038,3 +2038,11 @@ MOBILE
 .projects-showcase {
   padding-top: 120px;
 }
+.top-hero {
+  min-height: auto;
+  padding-bottom: 0;
+}
+
+.hero-content {
+  align-items: center;
+}
