@@ -1853,7 +1853,7 @@ select,
 }
 
 /* ===============================
-PROJECT BLOCK
+PROJECTS SECTION
 =============================== */
 .project-block{
   margin-top: 80px;
@@ -1867,6 +1867,7 @@ GRID
   grid-template-columns: 1.15fr 0.85fr;
   gap: 70px;
   align-items: center;
+  margin-bottom: 34px;
 }
 
 /* TEXT */
@@ -1883,122 +1884,142 @@ GRID
   font-weight: 700;
   color: #666;
   margin-bottom: 16px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .project-text{
   line-height: 1.7;
+  font-size: 16px;
   color: #444;
+  margin: 0;
 }
 
-/* ===============================
-FEATURED IMAGE
-=============================== */
-.project-featured-wrap{
+/* MAIN IMAGE */
+.project-image{
   display: flex;
   justify-content: center;
 }
 
-.project-featured-wrap img{
+.project-image img{
   width: 100%;
   max-width: 520px;
   height: 340px;
   object-fit: cover;
   border-radius: 14px;
-
   box-shadow:
-    0 30px 70px rgba(0,0,0,0.25),
-    0 10px 25px rgba(0,0,0,0.12);
-
-  transition: transform 0.35s ease;
+    0 30px 70px rgba(0,0,0,0.22),
+    0 10px 25px rgba(0,0,0,0.10);
+  transition: transform 0.3s ease;
 }
 
-.project-featured-wrap img:hover{
-  transform: translateY(-6px);
+.project-image img:hover{
+  transform: translateY(-4px);
 }
 
 /* ===============================
-🔥 SCROLL PANEL (THIS IS WHAT YOU LOST)
+SCROLL PANEL
 =============================== */
-
-.project-gallery{
-  margin-top: 50px;
-  overflow: hidden;
-  position: relative;
-}
-
-/* scroll track */
-.project-gallery-track{
+.project-scroll{
   display: flex;
-  gap: 16px;
-
+  gap: 14px;
   overflow-x: auto;
-  padding: 12px 0 16px;
-
+  overflow-y: hidden;
+  padding: 10px 0 14px;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+  cursor: grab;
 }
 
-/* hide scrollbar */
-.project-gallery-track::-webkit-scrollbar{
-  display: none;
+.project-scroll:active{
+  cursor: grabbing;
 }
 
-/* images */
-.project-thumb{
+.project-scroll::-webkit-scrollbar{
+  height: 8px;
+}
+
+.project-scroll::-webkit-scrollbar-track{
+  background: rgba(0,0,0,0.05);
+  border-radius: 999px;
+}
+
+.project-scroll::-webkit-scrollbar-thumb{
+  background: rgba(0,0,0,0.18);
+  border-radius: 999px;
+}
+
+/* GALLERY IMAGES */
+.project-img{
   height: 220px;
-  border-radius: 12px;
+  width: auto;
   flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 12px;
   cursor: pointer;
-
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
 }
 
-/* hover */
-.project-thumb:hover{
-  transform: scale(1.06);
-  box-shadow: 0 18px 35px rgba(0,0,0,0.2);
+.project-img:hover{
+  transform: scale(1.04);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.18);
 }
 
-/* edge fade (keeps premium look WITHOUT killing scroll) */
-.project-gallery::before,
-.project-gallery::after{
-  content: "";
+/* ===============================
+LIGHTBOX
+=============================== */
+.lightbox{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.92);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  padding: 30px;
+}
+
+.lightbox.show{
+  display: flex;
+}
+
+.lightbox-img{
+  max-width: 92vw;
+  max-height: 88vh;
+  border-radius: 12px;
+}
+
+.lightbox-close{
   position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 60px;
-  z-index: 2;
-  pointer-events: none;
-}
-
-.project-gallery::before{
-  left: 0;
-  background: linear-gradient(to right, #fff, transparent);
-}
-
-.project-gallery::after{
-  right: 0;
-  background: linear-gradient(to left, #fff, transparent);
+  top: 18px;
+  right: 28px;
+  font-size: 42px;
+  line-height: 1;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100000;
 }
 
 /* ===============================
 MOBILE
 =============================== */
 @media (max-width: 900px){
-
   .project-grid{
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 28px;
   }
 
-  .project-featured-wrap img{
+  .project-title{
+    font-size: 26px;
+  }
+
+  .project-image img{
     max-width: 100%;
     height: 260px;
   }
 
-  .project-thumb{
+  .project-img{
     height: 170px;
   }
 }
