@@ -1853,39 +1853,46 @@ select,
 }
 
 /* ===============================
-PROJECT PAGE
+PROJECTS HERO IMAGE ONLY
 =============================== */
-
 .projects-hero::before{
   background:
-    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-    url("./assets/last-cta-photo.webp") center/cover no-repeat;
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url("./assets/flmanhero3.webp") center / cover no-repeat;
+}
+
+/* ===============================
+PROJECTS PAGE
+=============================== */
+.projects-page{
+  padding: 80px 0;
+  background: #fff;
 }
 
 .project-block{
-  padding: 80px 0;
+  margin-bottom: 100px;
 }
 
-.project-details-grid{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-  margin: 20px 0;
+.project-meta{
+  margin: 16px 0;
   font-weight: 700;
+  color: #666;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-.project-description{
-  max-width: 700px;
-  line-height: 1.7;
-  margin-bottom: 30px;
+.project-text{
+  max-width: 600px;
+  line-height: 1.6;
+  margin-bottom: 24px;
 }
 
-/* SCROLL GALLERY */
+/* SCROLL */
 .project-scroll{
   display: flex;
   gap: 14px;
   overflow-x: auto;
-  padding-bottom: 10px;
 }
 
 .project-scroll img{
@@ -1896,10 +1903,6 @@ PROJECT PAGE
 
 /* MOBILE */
 @media (max-width: 900px){
-  .project-details-grid{
-    grid-template-columns: 1fr 1fr;
-  }
-
   .project-scroll img{
     height: 200px;
   }
