@@ -1853,147 +1853,150 @@ select,
 }
 
 /* ===============================
-PROJECTS PAGE
+PROJECTS SECTION (FINAL CLEAN)
 =============================== */
 
-.projects-page{
-  padding: 80px 0;
-  background: #fff;
+.project-block{
+  margin-top: 80px;
 }
 
-.project-block{
-  margin-top: 60px;
+/* ===============================
+GRID LAYOUT
+=============================== */
+.project-grid{
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 70px;
+  align-items: center;
+}
+
+/* ===============================
+TEXT
+=============================== */
+.project-info{
+  max-width: 620px;
 }
 
 .project-title{
-  font-size: 26px;
-  margin-bottom: 10px;
+  font-size: 34px;
+  margin-bottom: 14px;
 }
 
 .project-meta{
   font-weight: 700;
   color: #666;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
 }
 
 .project-text{
-  max-width: 600px;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  line-height: 1.7;
+  font-size: 16px;
+  color: #444;
 }
 
-.project-scroll{
-  display: flex;
-  gap: 12px;
-  overflow-x: auto;
-}
-
-.project-scroll img{
-  height: 260px;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-/* MOBILE */
-@media (max-width: 900px){
-  .project-scroll img{
-    height: 200px;
-  }
-}
 /* ===============================
-PROJECT FEATURED IMAGE
+FEATURED IMAGE
 =============================== */
-
-.project-featured{
-  position: relative;
-  width: 100%;
-  height: 420px;
-  margin-bottom: 20px;
-  overflow: hidden;
-  border-radius: 10px;
+.project-featured-wrap{
+  display: flex;
+  justify-content: center;
 }
 
-/* image */
-.project-featured img{
+.project-featured-wrap img{
   width: 100%;
-  height: 100%;
+  max-width: 520px;
+  height: 340px;
   object-fit: cover;
-  display: block;
+  border-radius: 14px;
+
+  box-shadow:
+    0 30px 70px rgba(0,0,0,0.25),
+    0 10px 25px rgba(0,0,0,0.12);
+
+  transition: transform 0.4s ease;
 }
 
-/* dark overlay */
-.project-featured::after{
+.project-featured-wrap img:hover{
+  transform: translateY(-6px) scale(1.01);
+}
+
+/* ===============================
+GALLERY (PREMIUM STRIP)
+=============================== */
+.project-gallery{
+  margin-top: 50px;
+  position: relative;
+}
+
+/* fade edges */
+.project-gallery::before,
+.project-gallery::after{
   content: "";
   position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    rgba(0,0,0,0.2),
-    rgba(0,0,0,0.7)
-  );
-}
-
-/* title overlay */
-.project-featured-overlay{
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 70px;
   z-index: 2;
+  pointer-events: none;
 }
 
-/* title styling */
-.project-featured-overlay .project-title{
-  color: #fff;
-  font-size: 32px;
-  margin: 0;
-  text-shadow: 0 10px 30px rgba(0,0,0,0.6);
+.project-gallery::before{
+  left: 0;
+  background: linear-gradient(to right, #fff, transparent);
 }
 
-/* MOBILE */
-@media (max-width: 900px){
-  .project-featured{
-    height: 260px;
-  }
+.project-gallery::after{
+  right: 0;
+  background: linear-gradient(to left, #fff, transparent);
+}
 
-  .project-featured-overlay .project-title{
-    font-size: 22px;
-  }
+/* scroll track */
+.project-gallery-track{
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+/* thumbnails */
+.project-thumb{
+  height: 210px;
+  border-radius: 12px;
+  flex-shrink: 0;
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.project-thumb:hover{
+  transform: scale(1.08);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
 /* ===============================
-LIGHTBOX
+LIGHTBOX (CLEAN)
 =============================== */
-
-.project-img{
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.project-img:hover{
-  transform: scale(1.03);
-}
-
-/* overlay */
 .lightbox{
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.9);
+  background: rgba(0,0,0,0.92);
   display: none;
   align-items: center;
   justify-content: center;
   z-index: 99999;
 }
 
-/* image */
 .lightbox-img{
   max-width: 90%;
   max-height: 85%;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
-/* close button */
 .lightbox-close{
   position: absolute;
   top: 20px;
@@ -2002,178 +2005,27 @@ LIGHTBOX
   color: #fff;
   cursor: pointer;
 }
-/* ===============================
-PROJECT PAGE CLEAN STYLE
-=============================== */
-
-.projects-page{
-  padding: 100px 0;
-  background: #fff;
-}
-
-/* project spacing */
-.project-block{
-  margin-top: 80px;
-}
-
-/* title */
-.project-title{
-  font-size: 32px;
-  margin-bottom: 16px;
-}
-
-/* description */
-.project-text{
-  max-width: 700px;
-  line-height: 1.7;
-  margin-bottom: 30px;
-}
-
-/* main image */
-.project-main-image{
-  width: 100%;
-  margin-bottom: 24px;
-}
-
-.project-main-image img{
-  width: 100%;
-  height: 420px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-/* scroll gallery */
-.project-scroll{
-  display: flex;
-  gap: 12px;
-  overflow-x: auto;
-}
-
-.project-scroll img{
-  height: 220px;
-  border-radius: 8px;
-  object-fit: cover;
-  cursor: pointer;
-}
-
-/* mobile */
-@media (max-width: 900px){
-  .project-main-image img{
-    height: 260px;
-  }
-
-  .project-title{
-    font-size: 24px;
-  }
-}
-
-
-/* ===============================
-PROJECT HERO IMAGE (FIXED)
-=============================== */
-
-/* ===============================
-PROJECT HERO IMAGE (FIXED SIZE)
-=============================== */
-
-.project-hero-image{
-  margin: 24px 0 20px;
-  display: flex;
-  justify-content: flex-start; /* keeps it aligned with text */
-}
-
-/* image */
-.project-hero-image img{
-  width: 65%;              /* 🔥 KEY CHANGE */
-  max-width: 700px;        /* prevents it getting huge */
-  height: 320px;           /* 🔥 smaller height */
-  object-fit: cover;
-
-  border-radius: 10px;
-
-  box-shadow:
-    0 20px 50px rgba(0,0,0,0.2),
-    0 6px 15px rgba(0,0,0,0.1);
-}
-
-/* subtle lift */
-.project-hero-image{
-  transform: translateY(-10px);
-}
-
-/* spacing below */
-.project-scroll{
-  margin-top: 10px;
-}
-
-
-/* ===============================
-PROJECT GRID
-=============================== */
-.project-grid{
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 60px;
-  align-items: center;
-}
-
-/* TEXT */
-.project-info{
-  max-width: 600px;
-}
-
-/* IMAGE */
-.project-image{
-  display: flex;
-  justify-content: center;
-}
-
-.project-image img{
-  width: 100%;
-  max-width: 460px;
-  height: 320px;
-  object-fit: cover;
-  border-radius: 12px;
-
-  box-shadow:
-    0 25px 60px rgba(0,0,0,0.2),
-    0 8px 20px rgba(0,0,0,0.1);
-}
-
-/* ===============================
-GALLERY
-=============================== */
-.project-gallery-wrap{
-  margin-top: 40px;
-}
-
-.project-scroll{
-  display: flex;
-  gap: 14px;
-  overflow-x: auto;
-  padding-bottom: 10px;
-}
-
-.project-thumb{
-  height: 200px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: transform 0.25s ease;
-}
-
-.project-thumb:hover{
-  transform: scale(1.05);
-}
 
 /* ===============================
 MOBILE
 =============================== */
 @media (max-width: 900px){
+
   .project-grid{
     grid-template-columns: 1fr;
+    gap: 30px;
   }
 
-  .project-image img{
+  .project-featured-wrap img{
     max-width: 100%;
+    height: 260px;
+  }
+
+  .project-thumb{
+    height: 170px;
+  }
+
+  .project-title{
+    font-size: 26px;
   }
 }
