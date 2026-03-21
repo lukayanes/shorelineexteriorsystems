@@ -1,10 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-
-<!-- ===============================
-GOOGLE ANALYTICS (GA4)
-================================ -->
+ <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BRMXR8MN86"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -13,55 +10,31 @@ GOOGLE ANALYTICS (GA4)
   gtag('config', 'G-BRMXR8MN86');
 </script>
 
-<!-- ===============================
-BASIC META
-================================ -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Projects | Shoreline Exterior Systems Sarasota</title>
-<meta name="description" content="View completed stucco, EIFS, and exterior system projects by Shoreline Exterior Systems. Commercial and residential work across Sarasota and the Gulf Coast.">
+  <title>About Shoreline Exterior Systems | Sarasota, FL</title>
+  <meta name="description" content="Learn about Shoreline Exterior Systems, a licensed Sarasota exterior contractor specializing in stucco, EIFS, stone veneer, and commercial exterior systems.">
 
-<!-- ===============================
-CANONICAL
-================================ -->
-<link rel="canonical" href="https://shorelineexteriorsystems.com/projects.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="About Shoreline Exterior Systems">
+  <meta property="og:description" content="Professional, dependable exterior contracting by trusted Sarasota locals.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shorelineexteriorsystems.com/about.html">
+  <meta property="og:image" content="https://shorelineexteriorsystems.com/assets/logo2222.webp">
 
-<!-- ===============================
-OPEN GRAPH (FACEBOOK / LINK PREVIEW)
-================================ -->
-<meta property="og:title" content="Projects | Shoreline Exterior Systems">
-<meta property="og:description" content="Explore real stucco, EIFS, and exterior system projects completed across Sarasota and the Gulf Coast.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://shorelineexteriorsystems.com/projects.html">
-<meta property="og:image" content="https://shorelineexteriorsystems.com/assets/project1-cover.webp">
-
-<!-- ===============================
-TWITTER
-================================ -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Projects | Shoreline Exterior Systems">
-<meta name="twitter:description" content="See completed exterior systems and stucco projects across Sarasota, FL.">
-<meta name="twitter:image" content="https://shorelineexteriorsystems.com/assets/project1-cover.webp">
-
-<!-- ===============================
-FAVICON + STYLES
-================================ -->
-<link rel="icon" href="assets/favicon.ico">
-<link rel="stylesheet" href="styles.css">
-
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<!-- ===============================
-TOP CONTACT BAR
-================================ -->
+<!-- TOP CONTACT BAR -->
 <div class="top-contact-bar">
   <div class="top-contact-inner">
 
     <a class="top-contact-item" href="mailto:shorelineexteriorsystems@gmail.com">
-      <span class="top-contact-icon">✉</span>
+      <span class="top-contact-icon" aria-hidden="true">✉</span>
       <div class="top-contact-text">
         <span class="top-contact-label">EMAIL US TODAY</span>
         <span class="top-contact-value">shorelineexteriorsystems@gmail.com</span>
@@ -69,7 +42,7 @@ TOP CONTACT BAR
     </a>
 
     <a class="top-contact-item" href="tel:19412651028">
-      <span class="top-contact-icon phone-icon">📞</span>
+      <span class="top-contact-icon phone-icon" aria-hidden="true">📞</span>
       <div class="top-contact-text">
         <span class="top-contact-label">CALL US NOW</span>
         <span class="top-contact-value">(941) 265-1028</span>
@@ -79,244 +52,194 @@ TOP CONTACT BAR
   </div>
 </div>
 
-<!-- ===============================
-NAV
-================================ -->
+<!-- NAV -->
 <nav class="top-nav">
   <div class="top-nav-inner">
-
     <div class="nav-left">
       <a href="./about.html">About</a>
 
       <div class="nav-dropdown">
-        <button class="nav-dropbtn nav-linklike">
-          Services <span class="nav-caret">▾</span>
+        <button class="nav-dropbtn nav-linklike" type="button" aria-haspopup="true" aria-expanded="false">
+          Services <span class="nav-caret" aria-hidden="true">▾</span>
         </button>
 
-        <div class="nav-dropmenu">
-          <a href="./services.html">All Services</a>
-          <a href="./services/traditional-stucco.html">Traditional Stucco</a>
-          <a href="./services/eifs.html">EIFS</a>
-          <a href="./services/manufactured-stone-veneer.html">Stone Veneer</a>
-          <a href="./services/repairs-restoration.html">Repairs</a>
+        <div class="nav-dropmenu" role="menu" aria-label="Services submenu">
+          <a role="menuitem" href="./services.html">All Services</a>
+          <a role="menuitem" href="./services/traditional-stucco.html">Traditional Stucco</a>
+          <a role="menuitem" href="./services/eifs.html">Exterior Insulation Finish System (EIFS)</a>
+          <a role="menuitem" href="./services/manufactured-stone-veneer.html">Manufactured Stone Veneer</a>
+          <a role="menuitem" href="./services/repairs-restoration.html">Repairs and Restoration</a>
+          <a role="menuitem" href="./services/fluid-applied-systems.html">Fluid-Applied Air and Moisture Systems</a>
+          <a role="menuitem" href="./services/flashing-sealants.html">Flashing and Sealants</a>
+          <a role="menuitem" href="./services/stucco-inspection.html">Stucco Inspection</a>
+          <a role="menuitem" href="./services/architectural-foam.html">Architectural Foam Shapes and Trims</a>
         </div>
       </div>
     </div>
 
-    <a class="nav-logo" href="./index.html">
-      <img src="assets/logo2222.webp">
+    <a class="nav-logo" href="./index.html" aria-label="Home">
+      <img src="assets/logo2222.webp" alt="Shoreline Exterior Systems" />
     </a>
 
     <div class="nav-right">
-      <a href="./projects.html">Projects</a>
       <a href="./reviews.html">Reviews</a>
       <a href="./contact.html">Contact</a>
     </div>
-
   </div>
 </nav>
 
-<!-- ===============================
-PROJECT HERO (MATCHED STYLE)
-================================ -->
-<header class="top-hero project-hero">
-
+<!-- ABOUT HERO -->
+<header class="top-hero">
   <div class="hero-overlay">
     <div class="hero-content hero-animate">
-
       <div class="hero-left">
-
-        <h1 class="hero-title">
-          Our Projects & Work
-        </h1>
-
+        <h1 class="hero-title">About Shoreline Exterior Systems</h1>
         <div class="hero-subs">
-          <p class="hero-sub">REAL PROJECTS. REAL SYSTEMS. REAL PERFORMANCE.</p>
-          <p class="hero-sub">STUCCO · EIFS · EXTERIOR SYSTEMS</p>
+          <p class="hero-sub">LICENSED SARASOTA EXTERIOR CONTRACTORS</p>
+          <p class="hero-sub">BUILT ON EXPERIENCE, QUALITY, AND TRUST</p>
         </div>
-
       </div>
-
     </div>
   </div>
-
 </header>
 
-<!-- ===============================
-PROJECT 1
-================================ -->
-<section class="project-wrap">
+<!-- ABOUT SPLIT -->
+<section class="about-split">
+  <div class="container about-split-grid">
 
-  <div class="container">
-
-    <div class="project-intro">
+    <div class="about-split-text">
       <p class="about-kicker">
-        <span class="about-link">FEATURED PROJECT</span>
+        <span class="about-link">WHO WE ARE</span>
       </p>
 
       <h2 class="about-title">
-        LUXURY WATERFRONT RESIDENCE<br>
-        EIFS + FULL EXTERIOR SYSTEM
+        EXPERIENCED EXTERIOR CONTRACTORS<br>
+        SERVING SARASOTA & THE GULF COAST
       </h2>
 
       <div class="about-underline"></div>
-    </div>
 
-    <div class="project-grid">
-
-      <div class="project-text">
-
-        <p class="project-body">
-          This custom waterfront home required a complete exterior system engineered for Florida’s coastal environment.
-          Our team installed a high-performance EIFS system with full moisture management and architectural detailing.
-        </p>
-
-        <div class="project-specs">
-
-          <div class="spec">
-            <span class="spec-label">Location</span>
-            <span class="spec-value">Sarasota, FL</span>
-          </div>
-
-          <div class="spec">
-            <span class="spec-label">System</span>
-            <span class="spec-value">EIFS + Barrier</span>
-          </div>
-
-          <div class="spec">
-            <span class="spec-label">Scope</span>
-            <span class="spec-value">Full Exterior</span>
-          </div>
-
-          <div class="spec">
-            <span class="spec-label">Timeline</span>
-            <span class="spec-value">10 Weeks</span>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="project-cover">
-        <img src="./assets/project1-cover.webp">
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ===============================
-TIMELINE SCROLL
-================================ -->
-<section class="project-timeline">
-
-  <div class="timeline-header">
-    <h3>Project Progression</h3>
-    <p>From start to finish</p>
-  </div>
-
-  <div class="timeline-scroll">
-    <div class="timeline-track">
-
-      <div class="timeline-item">
-        <img src="./assets/project1-1.webp">
-        <span>Framing</span>
-      </div>
-
-      <div class="timeline-item">
-        <img src="./assets/project1-2.webp">
-        <span>Prep</span>
-      </div>
-
-      <div class="timeline-item">
-        <img src="./assets/project1-3.webp">
-        <span>Barrier</span>
-      </div>
-
-      <div class="timeline-item">
-        <img src="./assets/project1-4.webp">
-        <span>Installation</span>
-      </div>
-
-      <div class="timeline-item">
-        <img src="./assets/project1-5.webp">
-        <span>Final Finish</span>
-      </div>
-
-    </div>
-  </div>
-
-</section>
-
-<!-- ===============================
-PROJECT 2
-================================ -->
-<section class="project-wrap alt">
-
-  <div class="container">
-
-    <div class="project-intro">
-      <p class="about-kicker">
-        <span class="about-link">PROJECT</span>
+      <p class="about-body">
+        Shoreline Exterior Systems is a licensed residential and commercial exterior contractor
+        specializing in high-performance stucco, EIFS, manufactured stone veneer, and complete
+        exterior wall systems. Our team brings decades of multi-state experience and a commitment
+        to craftsmanship, safety, and long-term durability.
       </p>
 
-      <h2 class="about-title">
-        MULTI-FAMILY STUCCO RENOVATION
-      </h2>
-
-      <div class="about-underline"></div>
+      <p class="about-body">
+        From pre-construction consulting through final installation and inspection, we work
+        closely with owners, architects, and builders to deliver exterior systems that perform
+        in Florida’s demanding climate.
+      </p>
     </div>
 
-    <div class="project-grid">
-
-      <div class="project-text">
-
-        <p class="project-body">
-          Full restoration of a multi-building stucco system including structural repair,
-          moisture remediation, and long-term coating system installation.
-        </p>
-
-        <div class="project-specs">
-
-          <div class="spec">
-            <span class="spec-label">Location</span>
-            <span class="spec-value">Bradenton, FL</span>
-          </div>
-
-          <div class="spec">
-            <span class="spec-label">System</span>
-            <span class="spec-value">Stucco Repair</span>
-          </div>
-
-          <div class="spec">
-            <span class="spec-label">Scope</span>
-            <span class="spec-value">Renovation</span>
-          </div>
-
-          <div class="spec">
-            <span class="spec-label">Timeline</span>
-            <span class="spec-value">6 Weeks</span>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="project-cover">
-        <img src="./assets/project2-cover.webp">
-      </div>
-
+    <div class="about-split-image">
+      <img src="./assets/vis-church.webp" alt="Exterior contracting project">
     </div>
 
+  </div>
+</section>
+
+<!-- HOW IT WORKS / APPLICATION SYSTEMS -->
+<section class="how-it-works">
+
+  <div class="container">
+    <p class="about-kicker">
+      <span class="about-link">HOW IT WORKS</span>
+    </p>
+
+    <h2 class="about-title">
+      APPLICATION SYSTEMS & PROJECT APPROACH
+    </h2>
+
+    <div class="about-underline"></div>
+
+    <p class="how-intro">
+      Shoreline Exterior Systems is a full-service residential and commercial exterior contractor.
+      We are experienced applicators of industry-leading EIFS, stucco, and exterior finish systems
+      used across a wide range of project types, including commercial buildings, multi-family
+      developments, healthcare facilities, educational institutions, and custom homes.
+    </p>
+  </div>
+
+<div class="how-steps container">
+
+  <!-- STEP 01 -->
+  <div class="how-step">
+    <div class="how-icon">
+      <!-- Pre-Construction Icon -->
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M3 3h18v4H3V3zm0 6h18v2H3V9zm0 4h12v2H3v-2zm0 4h8v2H3v-2z"/>
+      </svg>
+    </div>
+    <span class="how-step-num">01</span>
+    <h3>Pre-Construction Services</h3>
+    <p>
+      Our most successful projects begin during preliminary design. We collaborate closely
+      with owners, architects, and general contractors on detailing, budgeting, system selection,
+      and constructability analysis to ensure long-term performance.
+    </p>
+  </div>
+
+  <!-- STEP 02 -->
+  <div class="how-step">
+    <div class="how-icon">
+      <!-- Education Icon -->
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 13.53L5.18 13 12 9.47 18.82 13 12 16.53z"/>
+      </svg>
+    </div>
+    <span class="how-step-num">02</span>
+    <h3>Education & Collaboration</h3>
+    <p>
+      We offer Lunch-and-Learns and formal presentations for design teams and construction
+      professionals, covering the latest exterior system technologies, best practices,
+      and installation standards.
+    </p>
+  </div>
+
+  <!-- STEP 03 -->
+  <div class="how-step">
+    <div class="how-icon">
+      <!-- Inspection / Protection Icon -->
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 2l7 4v6c0 5-3.5 9.74-7 10-3.5-.26-7-5-7-10V6l7-4zm0 10.99l4.24-4.24-1.41-1.41L12 10.17 9.17 7.34 7.76 8.75 12 12.99z"/>
+      </svg>
+    </div>
+    <span class="how-step-num">03</span>
+    <h3>Inspections & Long-Term Protection</h3>
+    <p>
+      To protect asset value, we provide annual inspections, maintenance guidance,
+      and long-term warranty support for exterior systems we install.
+    </p>
+  </div>
+
+</div>
+
+  <!-- APPLICATION SYSTEMS -->
+  <div class="systems container">
+    <h3 class="systems-title">Certified & Proven Application Systems</h3>
+
+    <div class="systems-logos">
+
+      <a class="system-logo" href="https://www.dryvit.com" target="_blank" rel="noopener">
+        <img src="./assets/dryvit-logo.webp" alt="Dryvit Systems">
+      </a>
+
+      <a class="system-logo" href="https://www.stocorp.com" target="_blank" rel="noopener">
+        <img src="./assets/sto-main-logo-1.webp" alt="Sto Corp Systems">
+      </a>
+
+      <a class="system-logo" href="https://www.parexusa.com" target="_blank" rel="noopener">
+        <img src="./assets/Sika_ClaimU_pos_rgb.svg" alt="Parex Systems">
+      </a>
+
+    </div>
   </div>
 
 </section>
 
-<!-- ===============================
-KEEP YOUR EXISTING CTA
-================================ -->
+<!-- LAST CTA -->
 <section class="last-cta">
   <div class="last-cta-grid">
     <div class="last-cta-photo"></div>
@@ -339,38 +262,49 @@ KEEP YOUR EXISTING CTA
   </div>
 </section>
 
-<!-- ===============================
-FOOTER (UNCHANGED)
-================================ -->
 <footer class="site-footer">
   <div class="container footer-grid">
 
     <div class="footer-col footer-brand">
-      <img class="footer-logo" src="./assets/logo2222.webp">
-      <p class="footer-text">
-        Shoreline Exterior Systems is a licensed Sarasota exterior contracting company.
-      </p>
+      <div class="footer-brand-row">
+        <img class="footer-logo" src="./assets/logo2222.webp" alt="Shoreline Exterior Systems Logo" />
+        <p class="footer-text">
+          Shoreline Exterior Systems is a licensed Sarasota exterior contracting company providing
+          external commercial services and repairs.
+          Honest work. Fast response. No shortcuts.
+        </p>
+      </div>
     </div>
 
     <div class="footer-col">
       <h3>SERVICES</h3>
       <ul class="footer-links">
-        <li><a href="./services.html">All Services</a></li>
+        <li><a href="./services/traditional-stucco.html">Traditional Stucco</a></li>
+        <li><a href="./services/eifs.html">Exterior Insulation Finish System (EIFS)</a></li>
+        <li><a href="./services/manufactured-stone-veneer.html">Manufactured Stone Veneer</a></li>
+        <li><a href="./services/repairs-restoration.html">Repairs and Restoration</a></li>
+        <li><a href="./services/fluid-applied-systems.html">Fluid-Applied Air and Moisture Systems</a></li>
+        <li><a href="./services/flashing-sealants.html">Flashing and Sealants</a></li>
+        <li><a href="./services/stucco-inspection.html">Stucco Inspection</a></li>
+        <li><a href="./services/architectural-foam.html">Architectural Foam Shapes and Trims</a></li>
       </ul>
     </div>
 
     <div class="footer-col">
       <h3>COMPANY</h3>
       <ul class="footer-links">
+        <li><a href="./services.html">All Services</a></li>
         <li><a href="./about.html">About</a></li>
-        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="./reviews.html">Reviews</a></li>
+        <li><a href="./contact.html">Contact</a></li>
       </ul>
     </div>
 
     <div class="footer-col">
       <h3>CONTACT</h3>
-      <p>
-        Sarasota, FL<br>
+      <p class="footer-text">
+        Sarasota, FL<br />
+        <a href="mailto:shorelineexteriorsystems@gmail.com">shorelineexteriorsystems@gmail.com</a><br />
         <a href="tel:19412651028">(941) 265-1028</a>
       </p>
     </div>
@@ -379,12 +313,15 @@ FOOTER (UNCHANGED)
 </footer>
 
 <section class="copyright-bar">
-  <div class="container">
-    <p>© <span id="year"></span> Shoreline Exterior Systems</p>
+  <div class="container copyright-inner">
+    <p>
+      © <span id="year"></span> Shoreline Exterior Systems. All Rights Reserved ·
+      <a href="./terms.html">Terms</a> ·
+      <a href="./privacy.html">Privacy</a>
+    </p>
   </div>
 </section>
 
 <script src="/js/main.js" defer></script>
-
 </body>
 </html>
