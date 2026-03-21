@@ -1853,87 +1853,201 @@ select,
 }
 
 
-/* PROJECT WRAP */
-.project-wrap {
-  padding: 80px 0;
+/* =========================================
+   PROJECT HERO (MATCH EXISTING HERO SYSTEM)
+========================================= */
+
+.project-hero::before{
+  background:
+    linear-gradient(var(--hero-overlay), var(--hero-overlay)),
+    url("./assets/project-hero.webp") center / cover no-repeat;
+}
+
+
+/* =========================================
+   PROJECT SECTION
+========================================= */
+
+.project-wrap{
+  padding: clamp(80px, 10vw, 120px) 0;
+}
+
+.project-wrap:first-of-type{
+  margin-top: 40px;
+}
+
+.project-intro{
+  max-width: 720px;
+  margin-bottom: 40px;
 }
 
 /* GRID */
-.project-grid {
+.project-grid{
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  gap: 50px;
+  gap: clamp(30px, 4vw, 60px);
   align-items: center;
 }
 
 /* TEXT */
-.project-body {
-  margin-bottom: 30px;
-  line-height: 1.6;
+.project-body{
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 520px;
+  margin-bottom: 24px;
 }
 
 /* SPECS */
-.project-specs {
+.project-specs{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 22px;
+  margin-top: 24px;
 }
 
-.spec {
+.spec{
   display: flex;
   flex-direction: column;
 }
 
-.spec-label {
-  font-size: 12px;
-  color: #999;
+.spec-label{
+  font-size: 11px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
+  color: rgba(15,36,51,0.55);
 }
 
-.spec-value {
-  font-weight: 600;
+.spec-value{
+  font-weight: 800;
+  font-size: 14px;
+  color: #0f2433;
 }
 
-/* COVER IMAGE */
-.project-cover img {
+/* IMAGE */
+.project-cover{
+  box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+  overflow: hidden;
+}
+
+.project-cover img{
   width: 100%;
-  border-radius: 12px;
+  display: block;
+  object-fit: cover;
 }
 
-/* TIMELINE */
-.project-timeline {
-  padding: 60px 0 80px;
+
+/* =========================================
+   TIMELINE (START → FINISH SCROLL)
+========================================= */
+
+.project-timeline{
+  padding: clamp(80px, 10vw, 120px) 0;
+  background: #ffffff;
 }
 
-.timeline-header {
+.timeline-header{
   text-align: center;
   margin-bottom: 30px;
 }
 
-.timeline-scroll {
-  overflow-x: auto;
+.timeline-header h3{
+  font-size: 26px;
+  margin-bottom: 6px;
 }
 
-.timeline-track {
-  display: flex;
-  gap: 25px;
-  padding: 20px;
-}
-
-.timeline-item {
-  min-width: 280px;
-}
-
-.timeline-item img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.timeline-item span {
-  display: block;
-  margin-top: 10px;
+.timeline-header p{
+  color: #666;
   font-size: 14px;
+}
+
+/* SCROLL */
+.timeline-scroll{
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.timeline-track{
+  display: flex;
+  gap: 28px;
+  padding: 20px 6vw;
+}
+
+/* ITEM */
+.timeline-item{
+  min-width: 300px;
+}
+
+.timeline-item img{
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+}
+
+.timeline-item img:hover{
+  transform: scale(1.04);
+}
+
+.timeline-item span{
+  display: block;
+  margin-top: 12px;
+  font-weight: 700;
   text-align: center;
+  font-size: 14px;
+}
+
+
+/* =========================================
+   ALT PROJECT SECTION (OPTIONAL VARIATION)
+========================================= */
+
+.project-wrap.alt{
+  background: #f7f9fb;
+}
+
+
+/* =========================================
+   MOBILE OPTIMIZATION
+========================================= */
+
+@media (max-width: 900px){
+
+  .project-grid{
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  /* image first on mobile */
+  .project-cover{
+    order: -1;
+  }
+
+  .timeline-track{
+    padding: 20px 20px;
+  }
+
+  .timeline-item{
+    min-width: 260px;
+  }
+
+  .timeline-item img{
+    height: 200px;
+  }
+}
+
+
+/* =========================================
+   SMALL POLISH (MATCH SITE FEEL)
+========================================= */
+
+/* tighten heading spacing */
+.project-intro .about-title{
+  margin-bottom: 16px;
+}
+
+/* keep underline consistent */
+.project-intro .about-underline{
+  margin-bottom: 20px;
 }
