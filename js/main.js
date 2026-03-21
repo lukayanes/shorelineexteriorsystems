@@ -180,13 +180,17 @@ requestAnimationFrame(() => {
   });
 })();
 
-<script>
+/* ===============================
+   PROJECT LIGHTBOX
+================================ */
 window.addEventListener("DOMContentLoaded", () => {
 
   const images = document.querySelectorAll(".project-img");
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightbox-img");
   const closeBtn = document.querySelector(".lightbox-close");
+
+  if (!images.length || !lightbox || !lightboxImg || !closeBtn) return;
 
   images.forEach(img => {
     img.addEventListener("click", () => {
@@ -206,4 +210,3 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
 });
-</script>
