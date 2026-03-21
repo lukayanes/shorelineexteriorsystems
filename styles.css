@@ -2002,3 +2002,67 @@ LIGHTBOX
   color: #fff;
   cursor: pointer;
 }
+/* ===============================
+PROJECT PAGE CLEAN STYLE
+=============================== */
+
+.projects-page{
+  padding: 100px 0;
+  background: #fff;
+}
+
+/* project spacing */
+.project-block{
+  margin-top: 80px;
+}
+
+/* title */
+.project-title{
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+/* description */
+.project-text{
+  max-width: 700px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* main image */
+.project-main-image{
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.project-main-image img{
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* scroll gallery */
+.project-scroll{
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+}
+
+.project-scroll img{
+  height: 220px;
+  border-radius: 8px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* mobile */
+@media (max-width: 900px){
+  .project-main-image img{
+    height: 260px;
+  }
+
+  .project-title{
+    font-size: 24px;
+  }
+}
