@@ -1851,3 +1851,89 @@ select,
 .about-split-text h3{
   color:#5FAFB0;
 }
+
+
+/* PROJECT WRAP */
+.project-wrap {
+  padding: 80px 0;
+}
+
+/* GRID */
+.project-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* TEXT */
+.project-body {
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* SPECS */
+.project-specs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.spec {
+  display: flex;
+  flex-direction: column;
+}
+
+.spec-label {
+  font-size: 12px;
+  color: #999;
+  text-transform: uppercase;
+}
+
+.spec-value {
+  font-weight: 600;
+}
+
+/* COVER IMAGE */
+.project-cover img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* TIMELINE */
+.project-timeline {
+  padding: 60px 0 80px;
+}
+
+.timeline-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.timeline-scroll {
+  overflow-x: auto;
+}
+
+.timeline-track {
+  display: flex;
+  gap: 25px;
+  padding: 20px;
+}
+
+.timeline-item {
+  min-width: 280px;
+}
+
+.timeline-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.timeline-item span {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
