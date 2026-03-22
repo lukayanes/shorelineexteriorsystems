@@ -2046,3 +2046,105 @@ MOBILE
 .hero-content {
   align-items: center;
 }
+
+/* ===============================
+LOCATIONS (FROM SHOWER CO)
+================================ */
+
+.locations{
+  padding:80px 0;
+  background:#fff;
+}
+
+/* TOP TWO (FEATURED) */
+.locations-main{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:28px;
+  margin-top:40px;
+  margin-bottom:28px;
+}
+
+.location-large{
+  height:320px;
+}
+
+/* GRID BELOW */
+.locations-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:28px;
+}
+
+/* CARD */
+.location-card{
+  position:relative;
+  overflow:hidden;
+  border-radius:10px;
+  height:240px;
+  display:block;
+}
+
+.location-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:transform .4s ease;
+}
+
+/* OVERLAY */
+.location-overlay{
+  position:absolute;
+  inset:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:#fff;
+  text-align:center;
+  background:linear-gradient(
+    to top,
+    rgba(0,0,0,.6),
+    rgba(0,0,0,.25)
+  );
+}
+
+.location-overlay h3{
+  font-size:22px;
+  letter-spacing:.04em;
+}
+
+.location-pin{
+  font-size:26px;
+  margin-bottom:6px;
+}
+
+/* HOVER */
+.location-card:hover img{
+  transform:scale(1.08);
+}
+
+/* MOBILE */
+@media(max-width:900px){
+
+  .locations-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+}
+
+@media(max-width:600px){
+
+  .locations-main{
+    grid-template-columns:1fr;
+  }
+
+  .locations-grid{
+    grid-template-columns:1fr;
+  }
+
+  .location-large{
+    height:260px;
+  }
+
+}
