@@ -976,7 +976,7 @@ html.is-loaded .hero-sub{
 ================================ */
 .footer-grid{
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr 1fr; /* brand + 3 equal columns */
+  grid-template-columns: 1.6fr 1fr 1fr 1fr; /* brand + 3 equal columns */
   gap: 46px;
   align-items: start;
 }
