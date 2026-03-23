@@ -2281,12 +2281,6 @@ LOCATION PAGES — SCOPED STYLING
   max-width: 1400px;
 }
 
-.footer-logo{
-  height: 100px;
-  width: auto;
-}
-
-
 .footer-col{
   min-width:0;
 }
@@ -2294,4 +2288,11 @@ LOCATION PAGES — SCOPED STYLING
 /* 🔥 FORCE NO WRAP EVER */
 .footer-grid > *{
   grid-row: 1;
+}
+
+
+.footer-logo{
+  height: 100px;
+  width: auto;
+  flex: 0 0 auto; /* 🔥 THIS FIXES IT */
 }
