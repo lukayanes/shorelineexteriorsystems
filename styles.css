@@ -986,7 +986,6 @@ html.is-loaded .hero-sub{
   display: flex;
   align-items: flex-start;
   gap: 16px;
-  min-width: 0;
 }
 
 .footer-logo{
@@ -2294,5 +2293,6 @@ LOCATION PAGES — SCOPED STYLING
 .footer-logo{
   height: 100px;
   width: auto;
-  flex: 0 0 auto; /* 🔥 THIS FIXES IT */
+  max-width: none;        /* 🔥 CRITICAL */
+  flex: 0 0 auto;
 }
