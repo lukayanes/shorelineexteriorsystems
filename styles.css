@@ -2222,3 +2222,13 @@ LOCATION PAGES — FORCE NAVY
 .location-page .about-body{
   color:#071427 !important;
 }
+
+
+/* ===============================
+LOCATION PAGE — PROCESS TEXT WHITE
+================================ */
+
+.location-page .process-step h4,
+.location-page .process-step p{
+  color:#ffffff;
+}
