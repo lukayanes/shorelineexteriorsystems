@@ -976,8 +976,8 @@ html.is-loaded .hero-sub{
 ================================ */
 .footer-grid{
   display:grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
-  gap:32px;
+  grid-template-columns: 1.8fr 1fr 1fr 1fr 1fr;
+  gap:40px;
   align-items:start;
 }
 
@@ -2274,4 +2274,14 @@ LOCATION PAGES — SCOPED STYLING
 
 .footer-col{
   min-width:0;
+}
+
+
+.site-footer .container{
+  max-width: 1400px;
+}
+
+.footer-logo{
+  height: 100px;
+  width: auto;
 }
