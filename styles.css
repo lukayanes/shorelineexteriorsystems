@@ -2151,3 +2151,57 @@ LOCATIONS (FROM SHOWER CO)
 .locations .about-title{
   color: #0b1f33; /* your navy */
 }
+
+
+/* ===============================
+TAMPA LOCATION PAGE ADDITIONS
+================================ */
+
+.location-map{
+  background:#f6f7f4;
+  padding:110px 0 0 0;
+}
+
+.map-wrap{
+  margin-top:40px;
+}
+
+.process-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:28px 44px;
+  margin-top:20px;
+}
+
+.process-step{
+  display:flex;
+  gap:18px;
+  align-items:flex-start;
+}
+
+.process-number{
+  font-size:44px;
+  font-weight:700;
+  line-height:1;
+  color:var(--orange);
+  min-width:32px;
+}
+
+.process-step h4{
+  margin:0;
+  font-size:18px;
+  color:#0f2433;
+}
+
+.process-step p{
+  margin-top:6px;
+  font-size:15px;
+  line-height:1.5;
+  color:#444;
+}
+
+@media(max-width:768px){
+  .process-grid{
+    grid-template-columns:1fr;
+  }
+}
