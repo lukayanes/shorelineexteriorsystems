@@ -2255,3 +2255,9 @@ LOCATION PAGES — SCOPED STYLING
 .location-map-section .about-body{
   color:#071427;
 }
+
+
+.project-scroll {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
