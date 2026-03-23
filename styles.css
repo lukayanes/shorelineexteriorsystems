@@ -976,7 +976,7 @@ html.is-loaded .hero-sub{
 ================================ */
 .footer-grid{
   display:grid;
-  grid-template-columns: 1.8fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1.8fr repeat(4, 1fr);
   gap:40px;
   align-items:start;
 }
@@ -2284,4 +2284,14 @@ LOCATION PAGES — SCOPED STYLING
 .footer-logo{
   height: 100px;
   width: auto;
+}
+
+
+.footer-col{
+  min-width:0;
+}
+
+/* 🔥 FORCE NO WRAP EVER */
+.footer-grid > *{
+  grid-row: 1;
 }
