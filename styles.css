@@ -2206,4 +2206,52 @@ TAMPA LOCATION PAGE ADDITIONS
   }
 }
 
+/* ===============================
+LOCATION PAGES — SCOPED STYLING
+================================ */
 
+/* SERVICES SECTION (navy text) */
+.location-services .about-title{
+  color:#071427;
+}
+
+.location-services .about-underline{
+  background:#071427;
+}
+
+.location-services .about-body{
+  color:#071427;
+}
+
+
+/* PROCESS SECTION (white text + dark background) */
+.location-process{
+  background:#071427;
+}
+
+.location-process .about-title{
+  color:#ffffff;
+}
+
+.location-process .about-underline{
+  background:#ffffff;
+}
+
+.location-process .process-step h4,
+.location-process .process-step p{
+  color:#ffffff;
+}
+
+
+/* MAP SECTION (navy text) */
+.location-map-section .about-title{
+  color:#071427;
+}
+
+.location-map-section .about-underline{
+  background:#071427;
+}
+
+.location-map-section .about-body{
+  color:#071427;
+}
