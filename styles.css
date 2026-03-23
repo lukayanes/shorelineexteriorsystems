@@ -2205,3 +2205,20 @@ TAMPA LOCATION PAGE ADDITIONS
     grid-template-columns:1fr;
   }
 }
+
+
+/* ===============================
+LOCATION PAGES — FORCE NAVY
+================================ */
+
+.location-page .about-title{
+  color:#071427 !important;
+}
+
+.location-page .about-underline{
+  background:#071427 !important;
+}
+
+.location-page .about-body{
+  color:#071427 !important;
+}
