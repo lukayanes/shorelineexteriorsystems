@@ -2320,21 +2320,24 @@ LOCATION PAGES — SCOPED STYLING
 
 @media (max-width: 900px){
 
-  .nav-dropdown{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
+  /* RESET first */
   .nav-dropmenu{
-    position: absolute;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-
     width: 90vw !important;
     max-width: 420px;
+  }
 
+  /* LEFT SIDE (Services) → anchor left */
+  .nav-left .nav-dropmenu{
+    left: 0 !important;
     right: auto !important;
+    transform: none !important;
+  }
+
+  /* RIGHT SIDE (Locations) → anchor right */
+  .nav-right .nav-dropmenu{
+    right: 0 !important;
+    left: auto !important;
+    transform: none !important;
   }
 
 }
