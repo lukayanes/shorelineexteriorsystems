@@ -2317,3 +2317,24 @@ LOCATION PAGES — SCOPED STYLING
   }
 
 }
+
+@media (max-width: 900px){
+
+  .nav-dropdown{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-dropmenu{
+    position: absolute;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+
+    width: 90vw !important;
+    max-width: 420px;
+
+    right: auto !important;
+  }
+
+}
