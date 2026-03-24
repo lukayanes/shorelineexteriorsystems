@@ -108,35 +108,50 @@ requestAnimationFrame(() => {
    MOBILE SERVICES DROPDOWN
 ================================ */
 (() => {
-  const dd = document.querySelector(".nav-dropdown");
-  const btn = dd?.querySelector(".nav-dropbtn");
-  const menu = dd?.querySelector(".nav-dropmenu");
-  if (!dd || !btn || !menu) return;
+  const dropdowns = document.querySelectorAll(".nav-dropdown");
 
   const isTouch = window.matchMedia("(hover: none), (pointer: coarse)").matches;
   if (!isTouch) return;
 
-  const close = () => {
-    dd.classList.remove("is-open");
-    btn.setAttribute("aria-expanded", "false");
-  };
+  dropdowns.forEach((dd) => {
+    const btn = dd.querySelector(".nav-dropbtn");
+    const menu = dd.querySelector(".nav-dropmenu");
+    if (!btn || !menu) return;
 
-  btn.addEventListener("click", (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    const open = dd.classList.toggle("is-open");
-    btn.setAttribute("aria-expanded", open ? "true" : "false");
+    const close = () => {
+      dd.classList.remove("is-open");
+      btn.setAttribute("aria-expanded", "false");
+    };
+
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+
+      const isOpen = dd.classList.contains("is-open");
+
+      // CLOSE ALL FIRST
+      dropdowns.forEach(d => {
+        d.classList.remove("is-open");
+        d.querySelector(".nav-dropbtn")?.setAttribute("aria-expanded","false");
+      });
+
+      // OPEN THIS ONE
+      if (!isOpen) {
+        dd.classList.add("is-open");
+        btn.setAttribute("aria-expanded","true");
+      }
+    });
+
+    menu.addEventListener("click", (e) => e.stopPropagation());
   });
 
-  menu.addEventListener("click", (e) => e.stopPropagation());
-
-  document.addEventListener("click", (e) => {
-    if (!dd.contains(e.target)) close();
+  document.addEventListener("click", () => {
+    dropdowns.forEach(d => {
+      d.classList.remove("is-open");
+      d.querySelector(".nav-dropbtn")?.setAttribute("aria-expanded","false");
+    });
   });
 
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") close();
-  });
 })();
 
 /* ===============================
