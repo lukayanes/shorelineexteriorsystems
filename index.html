@@ -25,7 +25,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="styles.css?v=2">
+<link rel="stylesheet" href="styles.css?v=4">
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 
   <script type="application/ld+json">
@@ -168,6 +168,7 @@
   <div class="hero-inner wrap">
     <div class="hero-grid">
       <div class="hero-copy">
+        <img class="hero-mark" src="assets/logo-mark-white.webp" alt="" width="112" height="82">
         <p class="eyebrow">Licensed Florida exterior contractors</p>
         <h1>Commercial exterior systems, <span class="accent">built to last.</span></h1>
         <p class="hero-sub">40+ years of multi-state experience in stucco, EIFS, and building envelope systems &mdash; installed to manufacturer specification for hotels, multi-family, healthcare, and custom homes across Florida's Gulf Coast.</p>
@@ -182,12 +183,78 @@
         </div>
       </div>
       <div class="hero-right" id="quote">
-        <div class="hero-form">
-          <iframe src="https://links.summitflowcrm.com/widget/form/PtxB1LEEP12T8JGlHb1I" title="Request a free quote" loading="lazy"
-            data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow"
-            data-activation-type="alwaysActivated" data-deactivation-type="neverDeactivate"
-            data-form-id="PtxB1LEEP12T8JGlHb1I" data-form-name="PPC / Website"></iframe>
+
+  <div class="form-card">
+    <div class="form-card-head">
+      <h2>Request a free quote</h2>
+      <p>No pressure, no call centre &mdash; you get a straight answer on scope, schedule, and cost.</p>
+    </div>
+
+    <form class="quote-form" novalidate data-endpoint="" data-msgkey="JTVm2q1WSA5A8ZSqmDVP">
+      <div class="row-2">
+        <div class="field">
+          <label for="qf-name">Full name <span class="req">*</span></label>
+          <input id="qf-name" name="full_name" type="text" autocomplete="name" required
+                 placeholder="Jane Doe">
+          <span class="err">Please enter your name.</span>
         </div>
+        <div class="field">
+          <label for="qf-phone">Phone <span class="req">*</span></label>
+          <input id="qf-phone" name="phone" type="tel" autocomplete="tel" required
+                 placeholder="(941) 555-0123">
+          <span class="err">Please enter a phone number we can reach you on.</span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="qf-email">Email <span class="req">*</span></label>
+        <input id="qf-email" name="email" type="email" autocomplete="email" required
+               placeholder="you@company.com">
+        <span class="err">Please enter a valid email address.</span>
+      </div>
+
+      <div class="field">
+        <label for="qf-service">What do you need?</label>
+        <select id="qf-service" name="service">
+          <option value="">Select a service&hellip;</option>
+            <option value="Traditional Stucco">Traditional Stucco</option>
+            <option value="EIFS">EIFS</option>
+            <option value="Manufactured Stone Veneer">Manufactured Stone Veneer</option>
+            <option value="Repairs and Restoration">Repairs and Restoration</option>
+            <option value="Fluid-Applied Air &amp; Moisture Systems">Fluid-Applied Air &amp; Moisture Systems</option>
+            <option value="Flashing and Sealants">Flashing and Sealants</option>
+            <option value="Stucco Inspection">Stucco Inspection</option>
+            <option value="Architectural Foam">Architectural Foam</option>
+            <option value="Something else / not sure">Something else / not sure</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="qf-message">Project details <span class="req">*</span></label>
+        <textarea id="qf-message" name="message" required
+                  placeholder="Building type, approximate square footage, what is failing, and your timeline."></textarea>
+        <span class="err">Please tell us a little about the project.</span>
+      </div>
+
+      <!-- spam trap: hidden from people -->
+      <div class="hp" aria-hidden="true">
+        <label for="qf-website">Website</label>
+        <input id="qf-website" name="website" type="text" tabindex="-1" autocomplete="off">
+      </div>
+
+      <label class="consent" for="qf-consent">
+        <input id="qf-consent" name="consent" type="checkbox" required>
+        <span>By checking this box, I consent to receive transactional messages related to my account, orders, or services I have requested to Shoreline Exterior Systems LLC. These messages may include appointment reminders, order confirmations, and account notifications among others. Message frequency may vary. Message &amp; Data rates may apply. Reply HELP for help or STOP to opt-out.</span>
+      </label>
+
+      <button class="btn btn-sand" type="submit">Send My Request</button>
+      <p class="fineprint">Or call <a href="tel:19412651028" style="color:var(--teal);font-weight:700">(941) 265-1028</a> &mdash; we answer.</p>
+
+      <div class="form-note ok" role="status" data-show="false"></div>
+      <div class="form-note bad" role="alert" data-show="false"></div>
+    </form>
+  </div>
+
       </div>
     </div>
   </div>
@@ -566,6 +633,7 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=2" defer></script>
+<script src="js/main.js?v=4" defer></script>
+<script src="js/form.js?v=4" defer></script>
 </body>
 </html>
