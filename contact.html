@@ -25,7 +25,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="styles.css?v=4">
+<link rel="stylesheet" href="styles.css?v=5">
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 
   <script type="application/ld+json">
@@ -269,7 +269,9 @@
         <input id="qf-website" name="website" type="text" tabindex="-1" autocomplete="off">
       </div>
 
-      <label class="consent" for="qf-consent">
+      <!-- no for= here: the input is nested, and having both makes the click
+           fire twice and toggle the box straight back off -->
+      <label class="consent">
         <input id="qf-consent" name="consent" type="checkbox" required>
         <span>By checking this box, I consent to receive transactional messages related to my account, orders, or services I have requested to Shoreline Exterior Systems LLC. These messages may include appointment reminders, order confirmations, and account notifications among others. Message frequency may vary. Message &amp; Data rates may apply. Reply HELP for help or STOP to opt-out.</span>
       </label>
@@ -374,7 +376,7 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=4" defer></script>
-<script src="js/form.js?v=4" defer></script>
+<script src="js/main.js?v=5" defer></script>
+<script src="js/form.js?v=5" defer></script>
 </body>
 </html>

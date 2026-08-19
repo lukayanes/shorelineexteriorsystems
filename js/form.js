@@ -96,13 +96,19 @@
       var trapped = (form.elements.website && form.elements.website.value !== '') ||
                     (Date.now() - loadedAt < 2500);
 
+      var fullName = form.elements.full_name.value.trim();
+      var firstSpace = fullName.indexOf(' ');
+
       var data = {
-        full_name: form.elements.full_name.value.trim(),
+        full_name: fullName,
+        // GHL maps contacts more easily from split names
+        first_name: firstSpace > 0 ? fullName.slice(0, firstSpace) : fullName,
+        last_name: firstSpace > 0 ? fullName.slice(firstSpace + 1) : '',
         phone: form.elements.phone.value.trim(),
         email: form.elements.email.value.trim(),
         service: form.elements.service ? form.elements.service.value : '',
         message: form.elements.message.value.trim(),
-        consent: true,
+        consent: 'true',
         page: window.location.pathname,
         source: 'shorelineexteriorsystems.com'
       };
@@ -136,14 +142,20 @@
         }
       };
 
-      // GHL inbound webhooks do not return CORS headers, so a normal fetch
-      // read would fail even on success. Send it and treat a completed
-      // request as delivered; a network-level failure still reaches the user.
+      // GHL inbound webhooks send no CORS headers, so this has to go out as a
+      // no-cors request and the response is opaque — a completed request is
+      // treated as delivered, and a network failure still reaches the user.
+      //
+      // no-cors only permits CORS-safelisted content types, so an
+      // application/json header would be silently dropped and the body could
+      // arrive unparsed. Form-encoded is safelisted and GHL reads it reliably.
+      var body = new URLSearchParams();
+      Object.keys(data).forEach(function (k) { body.append(k, data[k]); });
+
       fetch(endpoint, {
         method: 'POST',
         mode: 'no-cors',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
+        body: body
       }).then(function () {
         done(true);
       }).catch(function () {
