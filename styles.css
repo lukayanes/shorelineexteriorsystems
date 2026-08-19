@@ -889,7 +889,9 @@ p:last-child{ margin-bottom: 0; }
   color: var(--navy);
 }
 .quote-form .req{ color: var(--teal); }
-.quote-form input,
+/* :not([type=checkbox]) matters — appearance:none strips the native
+   checkbox so it renders as an empty box that never shows a tick */
+.quote-form input:not([type="checkbox"]),
 .quote-form select,
 .quote-form textarea{
   font-family: var(--sans); font-size: 16px; color: var(--ink);
@@ -911,7 +913,7 @@ p:last-child{ margin-bottom: 0; }
 }
 .quote-form input::placeholder,
 .quote-form textarea::placeholder{ color: #9AA9B8; }
-.quote-form input:focus,
+.quote-form input:not([type="checkbox"]):focus,
 .quote-form select:focus,
 .quote-form textarea:focus{
   outline: none;
@@ -944,8 +946,15 @@ p:last-child{ margin-bottom: 0; }
   padding: 15px 16px;
 }
 .quote-form .consent input[type="checkbox"]{
-  width: 20px; height: 20px; flex: none; margin: 2px 0 0;
-  accent-color: var(--teal); cursor: pointer;
+  /* keep the native control so the tick actually draws; accent-color
+     brands it without us having to redraw a checkmark */
+  -webkit-appearance: checkbox;
+  appearance: auto;
+  width: 19px; height: 19px;
+  flex: none; margin: 1px 0 0; padding: 0;
+  border: 0; border-radius: 0; box-shadow: none;
+  accent-color: var(--teal);
+  cursor: pointer;
 }
 .quote-form .consent span{
   /* the consent sits inside a <label>, so undo the uppercase label styling */
